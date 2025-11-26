@@ -55,12 +55,14 @@ body {
 
 .banner__container {
   width: 100vw;
-  height: 327px;
+  height: 299px;
   overflow: clip;
   position: relative;
 }
 .banner__container img {
   object-fit: cover;
+  width: 100%;
+  height: 439px;
 }
 .banner__container h2 {
   color: white;
@@ -166,7 +168,7 @@ body {
 }
 
 .portfolios__container {
-  width: 100vw;
+  width: 50vw;
   height: max-content;
   --background-color: #202020;
   --border-color: #131313;
@@ -190,7 +192,7 @@ body {
   --padding-vertical: 46px;
   padding: var(--padding-vertical) var(--padding-horizontal);
   background-color: #282828;
-  max-width: calc(100vw - (var(--padding-horizontal) * 2) - (var(--margin-horizontal) * 2));
+  max-width: calc(100% - (var(--padding-horizontal) * 2) - (var(--margin-horizontal) * 2));
 }
 .portfolios__content-item {
   width: max-content;

@@ -97,7 +97,7 @@ body {
 }
 
 .capabilities__container {
-  width: 100vw;
+  width: 28.9vw;
   height: max-content;
   display: flex;
   justify-content: center;
@@ -109,6 +109,9 @@ body {
   --margin-horizontal: 0px;
   --margin-vertical: 45px;
   margin: var(--margin-vertical) var(--margin-horizontal);
+  position: absolute;
+  top: 30%;
+  left: 65.9%;
 }
 .capabilities__education-content {
   width: max-content;
@@ -117,7 +120,7 @@ body {
   border: var(--border-width) solid var(--border-color);
   background: var(--background-color);
   box-sizing: content-box;
-  padding: 11.3px;
+  padding: 27.3px;
 }
 .banner__skills-content {
   width: max-content;
@@ -141,25 +144,32 @@ body {
   outline: 1px solid blue;
 }
 
-.capabilities__education-content-list-item h3 {
+.capabilities__education-content h3 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   box-sizing: content-box;
   padding-bottom: 10px;
+  margin-left: -2.5px;
 }
-.capabilities__education-content-list-item p {
+.capabilities__education-content-list-item {
   color: white;
   font-size: 1rem;
+  line-height: 23.3px;
+  position:relative;
 }
 .capabilities__education-content-list {
-  width: max-content;
+  width: 100%;
   height: max-content;
   display: flex;
   flex-direction: column;
   row-gap: 19px;
+  /*! list-style: none; */
+  padding-left: 11.3px;
+  padding-right: 10.7px;
+  padding-bottom: 15.7px;
 }
 .capabilities__education-content-list-item {
-  width: max-content;
+  width: 100%;
   height: max-content;
   box-sizing: content-box;
   padding-bottom: 19px;
@@ -257,11 +267,11 @@ body {
 }
 
 .banner__skills-container {
-  width: 267px;
-  height: 264px;
+  width: max-content;
+  height: max-content;
   position: absolute;
-  top: 4%;
-  left: 139%;
+  top: -24.1%;
+  left: 66.5%;
   --background-color: #202020;
   --border-color: #131313;
   --border-width: 7px;
@@ -284,18 +294,31 @@ body {
 }
 .description__content {
   background-color: #686868;
-  width: 50vw;
+  width: 30.6vw;
   height: max-content;
   position: absolute;
   top: 0%;
-  left: 15%;
+  left: 50%;
   box-sizing: content-box;
   padding-top: 133px;
   padding-bottom: 133px;
   padding-left: 50px;
+  transform: translateX(-50%);
+  padding-right: 72.3px;
 }
 .description__content p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
   color: black;
+  
+}
+.capabilities__education-content-list-item p::before {
+  content: "";
+  position: absolute;
+  left: -3%;
+  top: 0.5em; /* aligns bullet vertically with first text line */
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
 }

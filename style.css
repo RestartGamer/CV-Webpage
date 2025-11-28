@@ -80,9 +80,9 @@ body {
   width: max-content;
   height: max-content;
   position: absolute;
-  top: 109%;
-  left: 5.3%;
-  transform: translateY(-100%);
+  top: 94%;
+  left: 50%;
+  transform: translateY(-100%) translateX(-50%);
   box-sizing: content-box;
   --padding-left: 43px;
   --padding-bottom: 54px;
@@ -253,7 +253,7 @@ body {
   position: absolute;
   top: 0%;
   left: 0%;
-  background-color: gray;
+  background-color: #808080cc;
   z-index: -1;
 }
 .banner__caption-background2 {
@@ -262,7 +262,7 @@ body {
   position: absolute;
   top: 18%;
   left: 5%;
-  background-color: #bdba00;
+  background-color: #bdba00a1;
   z-index: -2;
 }
 
@@ -291,6 +291,7 @@ body {
   /*! background-color: gray; */
   position: relative;
   z-index: -1;
+  margin-top: 196px;
 }
 .description__content {
   background-color: #686868;

@@ -120,8 +120,8 @@ body {
   --margin-vertical: 45px;
   margin: var(--margin-vertical) var(--margin-horizontal);
   position: absolute;
-  top: 30%;
-  left: 54.9%;
+  top: 20.0%;
+  left: 55.6%;
 }
 .capabilities__education-content {
   width: max-content;
@@ -280,7 +280,7 @@ body {
   width: max-content;
   height: max-content;
   position: absolute;
-  top: -2.6%;
+  top: 3.7%;
   left: 55.5%;
   --background-color: #202020;
   --border-color: #131313;
@@ -295,7 +295,7 @@ body {
 
 .description__container {
   width: 100vw;
-  height: 500px;
+  height: 1016px;
   box-sizing: content-box;
   /*! padding-top: 106px; */
   /*! background-color: gray; */
@@ -304,20 +304,20 @@ body {
 }
 .description__content {
   background-color: #686868;
-  width: 30.6vw;
+  width: 37.3vw;
   height: max-content;
   position: absolute;
-  top: 8.8%;
-  left: 43.7%;
+  top: 10.2%;
+  left: 36.1%;
   box-sizing: content-box;
   padding-top: 86.2px;
   padding-bottom: 133px;
   padding-left: 50px;
   transform: translateX(-50%);
-  padding-right: 72.3px;
+  padding-right: 41.9px;
 }
 .description__content p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: normal;
   color: black;
   

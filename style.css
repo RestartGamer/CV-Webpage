@@ -55,45 +55,55 @@ body {
 
 .banner__container {
   width: 100vw;
-  height: 567px;
+  height: 293px;
   overflow: clip;
   position: relative;
   display: flex;
   justify-content: center;
   box-sizing: content-box;
   overflow: visible;
+  z-index: -3;
+  align-items: center;
 }
 .banner__container > img {
   object-fit: cover;
-  width: 509px;
-  height: 460px;
+  width: 284px;
+  /*! height: auto; */
   /*! max-width: 100%; */
   /*! max-height: 94%; */
+  border-radius: 445px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 0;
+  left: 66%;
+  transform: translateX(-50%);
 }
 .banner__caption h2 {
   color: white;
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   z-index: 1;
 }
 
 .banner__caption {
-  width: max-content;
+  width: 36%;
   height: max-content;
   position: absolute;
-  top: 109%;
-  left: 5.3%;
+  top: 73%;
+  left: 20.3%;
   transform: translateY(-100%);
   box-sizing: content-box;
-  --padding-left: 43px;
-  --padding-bottom: 54px;
+  --padding-left: 49.5px;
+  --padding-bottom: 41px;
   padding: var(--padding-bottom) var(--padding-left);
   /*! background-color: gray; */
   overflow: visible;
+  z-index: -2;
 }
 .banner__caption p {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   z-index: 1;
+  width: 376px;
 }
 
 .capabilities__container {
@@ -111,7 +121,7 @@ body {
   margin: var(--margin-vertical) var(--margin-horizontal);
   position: absolute;
   top: 30%;
-  left: 65.9%;
+  left: 54.9%;
 }
 .capabilities__education-content {
   width: max-content;
@@ -270,8 +280,8 @@ body {
   width: max-content;
   height: max-content;
   position: absolute;
-  top: -24.1%;
-  left: 66.5%;
+  top: -8.1%;
+  left: 55.5%;
   --background-color: #202020;
   --border-color: #131313;
   --border-width: 7px;
@@ -279,7 +289,7 @@ body {
   --margin-vertical: 45px;
 }
 .banner__skills-icon-list-item > img {
-  width: 124px;
+  width: 77.9px;
   height: auto;
 }
 
@@ -298,7 +308,7 @@ body {
   height: max-content;
   position: absolute;
   top: 0%;
-  left: 50%;
+  left: 40.2%;
   box-sizing: content-box;
   padding-top: 133px;
   padding-bottom: 133px;

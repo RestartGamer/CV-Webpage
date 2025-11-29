@@ -280,7 +280,7 @@ body {
   width: max-content;
   height: max-content;
   position: absolute;
-  top: -8.1%;
+  top: -2.6%;
   left: 55.5%;
   --background-color: #202020;
   --border-color: #131313;
@@ -307,10 +307,10 @@ body {
   width: 30.6vw;
   height: max-content;
   position: absolute;
-  top: 0%;
-  left: 40.2%;
+  top: 8.8%;
+  left: 43.7%;
   box-sizing: content-box;
-  padding-top: 133px;
+  padding-top: 86.2px;
   padding-bottom: 133px;
   padding-left: 50px;
   transform: translateX(-50%);

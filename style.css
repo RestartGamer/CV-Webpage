@@ -64,6 +64,7 @@ body {
   overflow: visible;
   z-index: -3;
   align-items: center;
+  margin-top: 75px;
 }
 .banner__container > img {
   object-fit: cover;
@@ -131,6 +132,7 @@ body {
   background: var(--background-color);
   box-sizing: content-box;
   padding: 27.3px;
+  border-radius: 17.7px;
 }
 .skills__content {
   width: max-content;
@@ -139,7 +141,8 @@ body {
   border: var(--border-width) solid var(--border-color);
   background: var(--background-color);
   box-sizing: content-box;
-  padding: 11.3px;
+  padding: 17.1px 22.1px;
+  border-radius: 17.7px;
 }
 .education__content h2 {
   color: white;
@@ -163,7 +166,7 @@ body {
 }
 .education__content-list-item {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 23.3px;
   position:relative;
 }
@@ -222,7 +225,7 @@ body {
   width: max-content;
   height: max-content;
   position: absolute;
-  top: 3.7%;
+  top: 2.7%;
   left: 55.5%;
   --background-color: #202020;
   --border-color: #131313;
@@ -243,20 +246,25 @@ body {
   /*! background-color: gray; */
   position: relative;
   z-index: -1;
+  margin-top: 117px;
 }
 .description__text-content {
   background-color: #686868;
   width: 37.3vw;
   height: max-content;
   position: absolute;
-  top: 10.2%;
-  left: 36.1%;
+  top: 0;
+  left: 35.3%;
   box-sizing: content-box;
-  padding-top: 86.2px;
-  padding-bottom: 133px;
-  padding-left: 50px;
+  padding-top: 51.7px;
+  padding-bottom: 87px;
+  padding-left: 49.1px;
   transform: translateX(-50%);
-  padding-right: 41.9px;
+  padding-right: 52.9px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
 }
 .description__text-content p {
   font-size: 1.4rem;
@@ -286,7 +294,7 @@ body {
 .portfolio__container {
   width: 100vw;
   height: max-content;
-  margin-top: 54px;
+  margin-top: 137.3px;
 }
 .portfolio__content {
   width: 100%;
@@ -298,7 +306,7 @@ body {
 .portfolio__content-title {
   width: max-content;
   height: max-content;
-  margin-bottom: 130px;
+  margin-bottom: 125.7px;
 }
 .portfolio__content-title h2 {
   color: white;
@@ -309,6 +317,7 @@ body {
   height: max-content;
   display: flex;
   justify-content: start;
+  align-items: center;
 }
 .portfolio__content-item a {
   /*! display:block; */
@@ -316,6 +325,7 @@ body {
   height: max-content;
   text-decoration: none;
   display: flex;
+  align-items: start;
 }
 .portfolio__content-item {
   width: max-content;
@@ -325,6 +335,7 @@ body {
 object-fit:cover;
   width: 337px;
 height: 263px;
+border: 2px solid white;
 }
 .portfolio__content-item-text > h2 {
   color: white;
@@ -355,4 +366,52 @@ height: 263px;
 .portfolio__content-item-keywords p {
   color: white;
   font-size: 1rem;
+}
+
+.experience__container {
+  width: 100vw;
+  height: max-content;
+  margin-top: 107px;
+}
+.experience__content {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.experience__content-item {
+  width: max-content;
+  height: max-content;
+}
+.experience__content-item h2 {
+  color: white;
+  font-size: 1.3rem;
+}
+.experience__content small {
+  color: white;
+  font-size: 1rem;
+}
+.experience__content-item p {
+  color: white;
+  font-size: 1rem;
+}
+
+.experience__content-title {
+  width: max-content;
+  height: max-content;
+}
+.experience__content-title h2 {
+  color: white;
+  font-size: 2.6rem;
+}
+
+.experience__content-items {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: start;
+  margin-left: 128px;
 }

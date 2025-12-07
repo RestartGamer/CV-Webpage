@@ -2570,7 +2570,7 @@ body {
 }
 
 .header-section__text {
-  width: 316px;
+  width: 448.0px;
   height: max-content;
   margin-bottom: 19px;
 }
@@ -2986,7 +2986,7 @@ body {
 }
 .experience__content-below ul {
   padding-left: 21.9px;
-  width: 530px;
+  width: 277px;
   display: flex;
   flex-direction: column;
   row-gap: 14.0px;

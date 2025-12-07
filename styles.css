@@ -204,29 +204,6 @@ body {
 }
 
 .description__container {
-  width: 100vw;
-  height: max-content;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 45px;
-}
-.description__text-content {
-  background-color: #686868;
-  width: 37.3vw;
-  height: max-content;
-  position: absolute;
-  top: 0;
-  left: 35.3%;
-  box-sizing: content-box;
-  padding-top: 51.7px;
-  padding-bottom: 87px;
-  padding-left: 49.1px;
-  transform: translateX(-50%);
-  padding-right: 52.9px;
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 33px;
 }
 .description__text-content p {
   font-size: 1.4rem;
@@ -246,9 +223,13 @@ body {
 }
 
 .description__content {
-  width: 50%;
-  height: 100%;
-  position: relative;
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:start;
+  row-gap: 96px;
 }
 
 .portfolio__container {
@@ -503,7 +484,7 @@ body {
   justify-content: center;
 }
 .banner__text-container {
-  width: 22.4%;
+  width: 27.4%;
   height: auto;
   outline: 1px solid red;
 }
@@ -580,11 +561,8 @@ body {}
 .header-section__text-background2 {}
 .skills__container {}
 .banner__skills-icon-list-item > img {}
-.description__container {}
-.description__text-content {}
 .description__text-content p {}
 .education__content-list-item p::before {}
-.description__content {}
 .portfolio__container {}
 .portfolio__content {}
 .portfolio__content-title {}
@@ -2056,30 +2034,9 @@ body {
   height: auto;
 }
 
-.description__container {
-  width: 100vw;
-  height: max-content;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 45px;
-}
 .description__text-content {
-  background-color: #686868;
-  width: 37.3vw;
-  height: max-content;
-  position: absolute;
-  top: 0;
-  left: 35.3%;
-  box-sizing: content-box;
-  padding-top: 51.7px;
-  padding-bottom: 87px;
-  padding-left: 49.1px;
-  transform: translateX(-50%);
-  padding-right: 52.9px;
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 33px;
+  width:100%;
+  height:auto;
 }
 .description__text-content p {
   font-size: 1.4rem;
@@ -2096,12 +2053,6 @@ body {
   height: 8px;
   background-color: white;
   border-radius: 50%;
-}
-
-.description__content {
-  width: 50%;
-  height: 100%;
-  position: relative;
 }
 
 .portfolio__container {
@@ -2258,6 +2209,8 @@ body {
   color: white;
   font-size: 1.6rem;
   line-height: 1.3em;
+  width: 100%;
+  height: max-content;
 }
 .description__container.one {
   margin-top: 117px;
@@ -2377,8 +2330,106 @@ body {
   width: max-content;
 }
 
+.description__text-container {
+  width: 48%;
+  height: auto;
+}
 
 
+.description__item-container {
+  width: 100%;
+  height: auto;
+}
+.description__item-content {
+  width: 100%;
+  height: auto;
+}
+.description__item-title-container {
+  width: 100%;
+  height: auto;
+}
+.description__item-title-container h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.1rem;
+}
+.description__item-image-container {
+  width: 100%;
+  height: auto;
+}
+.description__item-image-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.description__item-image-content img {
+  object-fit: cover;
+  width: 9%;
+  height: auto;
+}
+
+
+.description__item-container {
+  width: 100%;
+  height: auto;
+}
+.description__item-content {
+  width: 100%;
+  height: auto;
+}
+.description__item-title-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 57px;
+}
+.description__item-title-container h2 {
+  color: white;
+  text-align: center;
+  font-size: 3.6rem;
+}
+.description__item-image-container {
+  width: 100%;
+  height: auto;
+}
+.description__item-image-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.description__item-image-content img {
+  object-fit: cover;
+  width: 9%;
+  height: auto;
+}
+.description__item-text-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 59px;
+}
+.description__item-text-content {
+  width: 48%;
+  height: auto;
+}
+.description__item-text-content h3 {
+  width: 100%;
+  height: max-content;
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 28px;
+}
+.description__item-text-content li {
+  color: white;
+  font-size: 1.7rem;
+  margin-left: 25px;
+}
+header {
+  margin-bottom: 138px;
+}
 
 
 

@@ -8,21 +8,24 @@
   --h2: 3.7rem;
   --h3: 2.1rem;
   --h4: 1.4rem;
-  --element-gap:115px;
-  --sub-element-gap:90px;
-  --h2-gap:3em;
-  --h3-gap:0.5em;
-  --h4-gap:0.3em;
+  --element-gap: 115px;
+  --sub-element-gap: 90px;
+  --h2-gap: 3em;
+  --h3-gap: 0.5em;
+  --h4-gap: 0.3em;
+  --fade-animation-distance: 20px;
 }
 
 html {
   width: 100%;
 }
+
 body {
   width: 100%;
   background-color: black;
 
 }
+
 .navbar__container {
   width: 100vw;
   height: max-content;
@@ -30,6 +33,7 @@ body {
   left: 0;
   z-index: 1;
 }
+
 .navbar__content {
   width: 100%;
   height: max-content;
@@ -37,6 +41,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .navbar__content-list {
   display: flex;
   column-gap: 51.8px;
@@ -47,14 +52,17 @@ body {
   padding-top: var(--padding-vertical);
   padding-bottom: var(--padding-vertical);
 }
+
 .navbar__content-list-item a {
   text-decoration: none;
   font-size: 1.4rem;
   color: white;
 }
+
 .navbar__content-list-item {
   list-style: none;
 }
+
 .navbar__content-item {
   width: max-content;
   height: max-content;
@@ -70,7 +78,8 @@ body {
   align-items: center;
   margin-bottom: var(--element-gap);
 }
-.banner__container > img {
+
+.banner__container>img {
   object-fit: cover;
   width: 284px;
   border-radius: 445px;
@@ -80,6 +89,7 @@ body {
   left: 66%;
   transform: translateX(-50%);
 }
+
 .header-section__text h2 {
   color: white;
   font-size: 2.6rem;
@@ -91,6 +101,7 @@ body {
   height: max-content;
   margin-bottom: 19px;
 }
+
 .header-section__text p {
   color: white;
   font-size: 1.4rem;
@@ -104,13 +115,14 @@ body {
   --border-width: 7px;
   --margin-horizontal: 0px;
   --margin-vertical: 45px;
-  width:100vw;
-  height:max-content;
-  display:flex;
-  justify-content:center;
-    
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+
   margin-bottom: 66px;
 }
+
 .education__content {
   width: 47%;
   height: max-content;
@@ -122,6 +134,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .skills__content {
   width: max-content;
   height: max-content;
@@ -131,6 +144,7 @@ body {
   padding: 17.1px 22.1px;
   border-radius: 17.7px;
 }
+
 .education__content h2 {
   color: white;
   text-align: center;
@@ -139,6 +153,7 @@ body {
   padding-bottom: 41px;
   padding-top: 38px;
 }
+
 .education__content-item {
   width: max-content;
   height: max-content;
@@ -151,12 +166,14 @@ body {
   box-sizing: content-box;
   padding-bottom: 21px;
 }
+
 .education__content-list-item {
   color: white;
   font-size: 1.1rem;
   line-height: 23.3px;
-  position:relative;
+  position: relative;
 }
+
 .education__content-list {
   width: auto;
   display: flex;
@@ -164,6 +181,7 @@ body {
   row-gap: 15px;
   padding-left: 16.3px;
 }
+
 .education__content-list-item {
   padding-bottom: 37px;
 }
@@ -173,6 +191,7 @@ body {
   display: flex;
   column-gap: 15.9px;
 }
+
 .skills__title-box h2 {
   text-align: center;
   box-sizing: content-box;
@@ -189,6 +208,7 @@ body {
   background-color: gray;
   z-index: -1;
 }
+
 .header-section__text-background2 {
   width: 100%;
   height: 100%;
@@ -200,10 +220,10 @@ body {
 }
 
 .skills__container {
-  width:100vw;
-  height:max-content;
-  display:flex;
-  justify-content:center;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
   --background-color: #202020;
   --border-color: #131313;
   --border-width: 7px;
@@ -211,7 +231,8 @@ body {
   --margin-vertical: 45px;
   margin-bottom: 75px;
 }
-.banner__skills-icon-list-item > img {
+
+.banner__skills-icon-list-item>img {
   width: 77.9px;
   height: auto;
 }
@@ -221,12 +242,14 @@ body {
   height: max-content;
   margin-bottom: var(--element-gap);
 }
+
 .description__text-content p {
   font-size: 1.4rem;
   font-weight: normal;
   color: black;
-  
+
 }
+
 .education__content-list-item p::before {
   content: "";
   position: absolute;
@@ -239,12 +262,12 @@ body {
 }
 
 .description__content {
-  width:100%;
-  height:auto;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:start;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
   row-gap: var(--element-gap);
 }
 
@@ -253,13 +276,15 @@ body {
   width: max-content;
   height: max-content;
 }
+
 .header-section__image img {
   object-fit: cover;
-  --image-size:234px;
+  --image-size: 234px;
   width: var(--image-size);
   height: var(--image-size);
   border-radius: 100%;
 }
+
 .header-section__content {
   width: 100%;
   height: max-content;
@@ -273,10 +298,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.3em;
 }
+
 .description__container.one {
   margin-top: 117px;
   margin-bottom: 68px;
 }
+
 .header-section__container {
   margin-top: 41px;
   width: 100vw;
@@ -297,16 +324,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .banner__text-container {
   width: 27.4%;
   height: auto;
   /*! outline: 1px solid red; */
 }
+
 .banner__image-container {
   width: 20.5%;
   /*! outline: 1px solid orange; */
   height: auto;
 }
+
 .banner__text-content {
   width: 100%;
   height: auto;
@@ -316,22 +346,26 @@ body {
   justify-content: center;
   row-gap: 15px;
 }
+
 .banner__text-content h1 {
   width: 100%;
   height: auto;
   color: white;
   font-size: var(--h1);
 }
+
 .banner__text-content p {
   width: 100%;
   height: auto;
   color: white;
   font-size: 2.3rem;
 }
+
 .banner__image-content {
   width: 100%;
   height: auto;
 }
+
 .banner__image-content img {
   width: 100%;
   height: auto;
@@ -348,18 +382,30 @@ body {
 html {
   width: 100%;
 }
+
 body {
   width: 100%;
   background-color: black;
 
 }
+
 .navbar__container {
   width: 100vw;
   height: auto;
   box-sizing: content-box;
   padding: 130px 0px;
   margin-bottom: var(--element-gap);
+  opacity: 0;
+  transform: translateY(var(--fade-animation-distance));
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
+
+.navbar__container.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
 .navbar__content {
   width: 100%;
   height: auto;
@@ -368,6 +414,7 @@ body {
   justify-content: center;
   column-gap: 54px;
 }
+
 .navbar__content-list {
   display: flex;
   column-gap: 51.8px;
@@ -378,14 +425,17 @@ body {
   padding-top: var(--padding-vertical);
   padding-bottom: var(--padding-vertical);
 }
+
 .navbar__content-list-item a {
   text-decoration: none;
   font-size: 1.4rem;
   color: white;
 }
+
 .navbar__content-list-item {
   list-style: none;
 }
+
 .navbar__content-item {
   width: max-content;
   height: max-content;
@@ -393,9 +443,9 @@ body {
   /*! padding-left: 77px; */
 }
 
-.banner__container {
-}
-.banner__container > img {
+.banner__container {}
+
+.banner__container>img {
   object-fit: cover;
   width: 284px;
   border-radius: 445px;
@@ -405,6 +455,7 @@ body {
   left: 66%;
   transform: translateX(-50%);
 }
+
 .header-section__text h2 {
   color: white;
   font-size: 2.6rem;
@@ -416,6 +467,7 @@ body {
   height: max-content;
   margin-bottom: 19px;
 }
+
 .header-section__text p {
   color: white;
   font-size: 1.4rem;
@@ -429,13 +481,14 @@ body {
   --border-width: 7px;
   --margin-horizontal: 0px;
   --margin-vertical: 45px;
-  width:100vw;
-  height:max-content;
-  display:flex;
-  justify-content:center;
-    
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+
   margin-bottom: 66px;
 }
+
 .education__content {
   width: 47%;
   height: max-content;
@@ -447,6 +500,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .skills__content {
   width: max-content;
   height: max-content;
@@ -456,6 +510,7 @@ body {
   padding: 17.1px 22.1px;
   border-radius: 17.7px;
 }
+
 .education__content h2 {
   color: white;
   text-align: center;
@@ -464,6 +519,7 @@ body {
   padding-bottom: 41px;
   padding-top: 38px;
 }
+
 .education__content-item {
   width: max-content;
   height: max-content;
@@ -476,12 +532,14 @@ body {
   box-sizing: content-box;
   padding-bottom: 21px;
 }
+
 .education__content-list-item {
   color: white;
   font-size: 1.1rem;
   line-height: 23.3px;
-  position:relative;
+  position: relative;
 }
+
 .education__content-list {
   width: auto;
   display: flex;
@@ -489,6 +547,7 @@ body {
   row-gap: 15px;
   padding-left: 16.3px;
 }
+
 .education__content-list-item {
   padding-bottom: 37px;
 }
@@ -498,6 +557,7 @@ body {
   display: flex;
   column-gap: 15.9px;
 }
+
 .skills__title-box h2 {
   text-align: center;
   box-sizing: content-box;
@@ -514,6 +574,7 @@ body {
   background-color: gray;
   z-index: -1;
 }
+
 .header-section__text-background2 {
   width: 100%;
   height: 100%;
@@ -525,10 +586,10 @@ body {
 }
 
 .skills__container {
-  width:100vw;
-  height:max-content;
-  display:flex;
-  justify-content:center;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
   --background-color: #202020;
   --border-color: #131313;
   --border-width: 7px;
@@ -536,21 +597,24 @@ body {
   --margin-vertical: 45px;
   margin-bottom: 75px;
 }
-.banner__skills-icon-list-item > img {
+
+.banner__skills-icon-list-item>img {
   width: 77.9px;
   height: auto;
 }
 
 .description__text-content {
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
 }
+
 .description__text-content p {
   font-size: 1.4rem;
   font-weight: normal;
   color: black;
-  
+
 }
+
 .education__content-list-item p::before {
   content: "";
   position: absolute;
@@ -568,13 +632,15 @@ body {
   width: max-content;
   height: max-content;
 }
+
 .header-section__image img {
   object-fit: cover;
-  --image-size:234px;
+  --image-size: 234px;
   width: var(--image-size);
   height: var(--image-size);
   border-radius: 100%;
 }
+
 .header-section__content {
   width: 100%;
   height: max-content;
@@ -590,10 +656,12 @@ body {
   width: 100%;
   height: max-content;
 }
+
 .description__container.one {
   margin-top: 117px;
   margin-bottom: 68px;
 }
+
 .header-section__container {
   margin-top: 41px;
   width: 100vw;
@@ -630,6 +698,7 @@ body {
   /*! outline: 1px solid red; */
   height: auto;
 }
+
 .navbar__image-content {
   display: flex;
   width: 14.7%;
@@ -637,17 +706,20 @@ body {
   justify-content: start;
   column-gap: 18px;
 }
+
 .navbar__text-container {
   width: max-content;
   /*! outline: 1px solid orange; */
   height: auto;
 }
+
 .navbar__text-content {
   width: 100%;
   height: auto;
   display: flex;
   column-gap: 47px;
 }
+
 .navbar__text-content a {
   text-decoration: none;
   color: white;
@@ -666,29 +738,35 @@ body {
   width: 100%;
   height: auto;
 }
+
 .description__item-content {
   width: 100%;
   height: auto;
 }
+
 .description__item-title-container {
   width: 100%;
   height: auto;
 }
+
 .description__item-title-container h2 {
   color: white;
   text-align: center;
   font-size: 2.1rem;
 }
+
 .description__item-image-container {
   width: 100%;
   height: auto;
 }
+
 .description__item-image-content {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
+
 .description__item-image-content img {
   object-fit: cover;
   width: 9%;
@@ -700,35 +778,42 @@ body {
   width: 100%;
   height: auto;
 }
+
 .description__item-content {
   width: 100%;
   height: auto;
 }
+
 .description__item-title-container {
   width: 100%;
   height: auto;
   margin-bottom: var(--h2-gap);
 }
+
 .description__item-title-container h2 {
   color: white;
   text-align: center;
   font-size: var(--h2);
 }
+
 .description__item-image-container {
   width: 100%;
   height: auto;
 }
+
 .description__item-image-content {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
+
 .description__item-image-content img {
   object-fit: cover;
   width: 9%;
   height: auto;
 }
+
 .description__item-text-container {
   width: 100%;
   height: auto;
@@ -737,10 +822,12 @@ body {
   align-items: center;
   row-gap: var(--sub-element-gap);
 }
+
 .description__item-text-content {
   width: 48%;
   height: auto;
 }
+
 .description__item-text-content h3 {
   width: 100%;
   height: max-content;
@@ -748,13 +835,14 @@ body {
   font-size: var(--h3);
   margin-bottom: 28px;
 }
+
 .description__item-text-content li {
   color: white;
   font-size: 1.7rem;
   margin-left: 25px;
 }
-header {
-}
+
+header {}
 
 
 .portfolio__container {
@@ -762,59 +850,70 @@ header {
   height: max-content;
   margin-bottom: var(--element-gap);
 }
+
 .portfolio__title-container {
   width: 100%;
   height: auto;
   margin-bottom: var(--h2-gap);
 }
+
 .portfolio__title-container h2 {
   color: white;
   text-align: center;
   font-size: var(--h2);
 }
+
 .portfolio__content {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   column-gap: 74px;
 }
+
 .portfolio__image-container {
   width: 17.0%;
   height: auto;
 }
+
 .portfolio__image-container img {
   object-fit: cover;
   width: 100%;
   height: auto;
 }
+
 .portfolio__text-container {
   width: 27%;
   height: auto;
 }
+
 .portfolio__text-content {
   width: 100%;
   height: auto;
 }
-.portfolio__text-content > h3 {
+
+.portfolio__text-content>h3 {
   color: white;
   text-align: start;
   font-size: var(--h3);
   margin-bottom: var(--h3-gap);
 }
-.portfolio__text-content > p {
+
+.portfolio__text-content>p {
   color: white;
   text-align: start;
   font-size: 1.4rem;
 }
+
 .portfolio__text-content-keywords {
   width: 100%;
   height: auto;
   display: flex;
   column-gap: 10px;
 }
-.portfolio__text-content-keywords > p {
+
+.portfolio__text-content-keywords>p {
   color: white;
   text-align: start;
   font-size: 1rem;
@@ -825,57 +924,67 @@ header {
   width: 100vw;
   height: max-content;
 }
+
 .experience__title-container {
   width: 100%;
   height: auto;
   margin-bottom: var(--h2-gap);
 }
-.experience__title-container > h2 {
+
+.experience__title-container>h2 {
   color: white;
   text-align: center;
   font-size: var(--h2);
 }
+
 .experience__content {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   column-gap: 27px;
   margin-bottom: var(--sub-element-gap);
 }
+
 .experience__image-content {
   width: 6.9%;
   height: max-content;
   border: 4px solid white;
   border-radius: 24px;
 }
+
 .experience__image-content svg {
   width: 100%;
   height: auto;
   color: white;
 }
+
 .experience__text-content {
   width: 38.9%;
   height: auto;
 }
-.experience__text-content > h3 {
+
+.experience__text-content>h3 {
   color: white;
   text-align: start;
   font-size: var(--h3);
   margin-bottom: var(--h3-gap);
 }
-.experience__text-content > h4 {
+
+.experience__text-content>h4 {
   color: white;
   text-align: start;
   font-size: var(--h4);
   margin-bottom: var(--h4-gap);
 }
-.experience__text-content > small {
+
+.experience__text-content>small {
   color: white;
   text-align: start;
   font-size: 1rem;
 }
+
 .experience__text-content li {
   color: white;
   text-align: start;
@@ -889,7 +998,7 @@ header {
   object-fit: cover;
   flex: 0 0 auto;
   box-sizing: border-box;
-  padding: 8.8px;
+  padding: 13.2%;
   max-width: 79px;
 }
 
@@ -900,10 +1009,24 @@ header {
   flex: 0 0 auto;
   max-width: 79px;
 }
+
 .navbar__image-content svg:first-of-type {
   box-sizing: border-box;
   padding: 2.2px;
 }
+
+.animated {
+  opacity: 0;
+  transform: translateY(var(--fade-animation-distance));
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.animated.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
 
 /* -----------------------------------------------------------
    MEDIA QUERIES WITH ALL SELECTORS (EMPTY)
@@ -911,410 +1034,790 @@ header {
 
 @media (min-width: 1200px) {
 
-* {}
-html {}
-body {}
-.navbar__container {}
-.navbar__content {}
-.navbar__content-list {}
-.navbar__content-list-item a {}
-.navbar__content-list-item {}
-.navbar__content-item {}
-.banner__container {}
-.banner__container > img {}
-.header-section__text h2 {}
-.header-section__text {}
-.header-section__text p {}
-.education__container {}
-.education__content {}
-.skills__content {}
-.education__content h2 {}
-.education__content-item {}
-.education__content h3 {}
-.education__content-list-item {}
-.education__content-list {}
-.education__content-list-item {}
-.banner__skills-icon-list {}
-.skills__title-box h2 {}
-.header-section__text-background1 {}
-.header-section__text-background2 {}
-.skills__container {}
-.banner__skills-icon-list-item > img {}
-.description__container {}
-.description__text-content {}
-.description__text-content p {}
-.education__content-list-item p::before {}
-.description__content {}
-.portfolio__container {}
-.portfolio__content {}
-.portfolio__content-title {}
-.portfolio__content-title h2 {}
-.portfolio__content-items {}
-.portfolio__content-item a {}
-.portfolio__content-item {}
-.portfolio__content-item a img {}
-.portfolio__content-item-text > h2 {}
-.portfolio__content-item-keywords {}
-.portfolio__content-item-text {}
-.portfolio__content-item-text > p {}
-.portfolio__content-item-keywords p {}
-.experience__container {}
-.experience__content {}
-.experience__content-item {}
-.experience__content-item h2 {}
-.experience__content-item-text small {}
-.experience__content-item p {}
-.experience__content-title {}
-.experience__content-title h2 {}
-.experience__content-items {}
-.header-section__image {}
-.header-section__image img {}
-.header-section__content {}
-.description__content p {}
-.description__container.one {}
-.header-section__container {}
-.description__container.two {}
-.education__text-content {}
-.experience__content-item-text {}
-.experience__content-item * {}
-.experience__content h2 {}
-.experience__image-content-icon {}
-.experience__content-item-text h3 {}
-.experience__content-item-text h4 {}
-.experience__content-below ul li {}
-.experience__content-below ul {}
-.experience__text-content {}
-.experience__image-content {}
-.experience__content-item-text small:first-of-type {}
-.description__container.three {}
-.experience__content-below {}
+  * {}
+
+  html {}
+
+  body {}
+
+  .navbar__container {}
+
+  .navbar__content {}
+
+  .navbar__content-list {}
+
+  .navbar__content-list-item a {}
+
+  .navbar__content-list-item {}
+
+  .navbar__content-item {}
+
+  .banner__container {}
+
+  .banner__container>img {}
+
+  .header-section__text h2 {}
+
+  .header-section__text {}
+
+  .header-section__text p {}
+
+  .education__container {}
+
+  .education__content {}
+
+  .skills__content {}
+
+  .education__content h2 {}
+
+  .education__content-item {}
+
+  .education__content h3 {}
+
+  .education__content-list-item {}
+
+  .education__content-list {}
+
+  .education__content-list-item {}
+
+  .banner__skills-icon-list {}
+
+  .skills__title-box h2 {}
+
+  .header-section__text-background1 {}
+
+  .header-section__text-background2 {}
+
+  .skills__container {}
+
+  .banner__skills-icon-list-item>img {}
+
+  .description__container {}
+
+  .description__text-content {}
+
+  .description__text-content p {}
+
+  .education__content-list-item p::before {}
+
+  .description__content {}
+
+  .portfolio__container {}
+
+  .portfolio__content {}
+
+  .portfolio__content-title {}
+
+  .portfolio__content-title h2 {}
+
+  .portfolio__content-items {}
+
+  .portfolio__content-item a {}
+
+  .portfolio__content-item {}
+
+  .portfolio__content-item a img {}
+
+  .portfolio__content-item-text>h2 {}
+
+  .portfolio__content-item-keywords {}
+
+  .portfolio__content-item-text {}
+
+  .portfolio__content-item-text>p {}
+
+  .portfolio__content-item-keywords p {}
+
+  .experience__container {}
+
+  .experience__content {}
+
+  .experience__content-item {}
+
+  .experience__content-item h2 {}
+
+  .experience__content-item-text small {}
+
+  .experience__content-item p {}
+
+  .experience__content-title {}
+
+  .experience__content-title h2 {}
+
+  .experience__content-items {}
+
+  .header-section__image {}
+
+  .header-section__image img {}
+
+  .header-section__content {}
+
+  .description__content p {}
+
+  .description__container.one {}
+
+  .header-section__container {}
+
+  .description__container.two {}
+
+  .education__text-content {}
+
+  .experience__content-item-text {}
+
+  .experience__content-item * {}
+
+  .experience__content h2 {}
+
+  .experience__image-content-icon {}
+
+  .experience__content-item-text h3 {}
+
+  .experience__content-item-text h4 {}
+
+  .experience__content-below ul li {}
+
+  .experience__content-below ul {}
+
+  .experience__text-content {}
+
+  .experience__image-content {}
+
+  .experience__content-item-text small:first-of-type {}
+
+  .description__container.three {}
+
+  .experience__content-below {}
 
 }
 
 @media (max-width: 1200px) {
 
-* {}
-html {}
-body {}
-.navbar__container {}
-.navbar__content {}
-.navbar__content-list {}
-.navbar__content-list-item a {}
-.navbar__content-list-item {}
-.navbar__content-item {}
-.banner__container {}
-.banner__container > img {}
-.header-section__text h2 {}
-.header-section__text {}
-.header-section__text p {}
-.education__container {}
-.education__content {}
-.skills__content {}
-.education__content h2 {}
-.education__content-item {}
-.education__content h3 {}
-.education__content-list-item {}
-.education__content-list {}
-.education__content-list-item {}
-.banner__skills-icon-list {}
-.skills__title-box h2 {}
-.header-section__text-background1 {}
-.header-section__text-background2 {}
-.skills__container {}
-.banner__skills-icon-list-item > img {}
-.description__container {}
-.description__text-content {}
-.description__text-content p {}
-.education__content-list-item p::before {}
-.description__content {}
-.portfolio__container {}
-.portfolio__content {}
-.portfolio__content-title {}
-.portfolio__content-title h2 {}
-.portfolio__content-items {}
-.portfolio__content-item a {}
-.portfolio__content-item {}
-.portfolio__content-item a img {}
-.portfolio__content-item-text > h2 {}
-.portfolio__content-item-keywords {}
-.portfolio__content-item-text {}
-.portfolio__content-item-text > p {}
-.portfolio__content-item-keywords p {}
-.experience__container {}
-.experience__content {}
-.experience__content-item {}
-.experience__content-item h2 {}
-.experience__content-item-text small {}
-.experience__content-item p {}
-.experience__content-title {}
-.experience__content-title h2 {}
-.experience__content-items {}
-.header-section__image {}
-.header-section__image img {}
-.header-section__content {}
-.description__content p {}
-.description__container.one {}
-.header-section__container {}
-.description__container.two {}
-.education__text-content {}
-.experience__content-item-text {}
-.experience__content-item * {}
-.experience__content h2 {}
-.experience__image-content-icon {}
-.experience__content-item-text h3 {}
-.experience__content-item-text h4 {}
-.experience__content-below ul li {}
-.experience__content-below ul {}
-.experience__text-content {}
-.experience__image-content {}
-.experience__content-item-text small:first-of-type {}
-.description__container.three {}
-.experience__content-below {}
+  * {}
+
+  html {}
+
+  body {}
+
+  .navbar__container {}
+
+  .navbar__content {}
+
+  .navbar__content-list {}
+
+  .navbar__content-list-item a {}
+
+  .navbar__content-list-item {}
+
+  .navbar__content-item {}
+
+  .banner__container {}
+
+  .banner__container>img {}
+
+  .header-section__text h2 {}
+
+  .header-section__text {}
+
+  .header-section__text p {}
+
+  .education__container {}
+
+  .education__content {}
+
+  .skills__content {}
+
+  .education__content h2 {}
+
+  .education__content-item {}
+
+  .education__content h3 {}
+
+  .education__content-list-item {}
+
+  .education__content-list {}
+
+  .education__content-list-item {}
+
+  .banner__skills-icon-list {}
+
+  .skills__title-box h2 {}
+
+  .header-section__text-background1 {}
+
+  .header-section__text-background2 {}
+
+  .skills__container {}
+
+  .banner__skills-icon-list-item>img {}
+
+  .description__container {}
+
+  .description__text-content {}
+
+  .description__text-content p {}
+
+  .education__content-list-item p::before {}
+
+  .description__content {}
+
+  .portfolio__container {}
+
+  .portfolio__content {}
+
+  .portfolio__content-title {}
+
+  .portfolio__content-title h2 {}
+
+  .portfolio__content-items {}
+
+  .portfolio__content-item a {}
+
+  .portfolio__content-item {}
+
+  .portfolio__content-item a img {}
+
+  .portfolio__content-item-text>h2 {}
+
+  .portfolio__content-item-keywords {}
+
+  .portfolio__content-item-text {}
+
+  .portfolio__content-item-text>p {}
+
+  .portfolio__content-item-keywords p {}
+
+  .experience__container {}
+
+  .experience__content {}
+
+  .experience__content-item {}
+
+  .experience__content-item h2 {}
+
+  .experience__content-item-text small {}
+
+  .experience__content-item p {}
+
+  .experience__content-title {}
+
+  .experience__content-title h2 {}
+
+  .experience__content-items {}
+
+  .header-section__image {}
+
+  .header-section__image img {}
+
+  .header-section__content {}
+
+  .description__content p {}
+
+  .description__container.one {}
+
+  .header-section__container {}
+
+  .description__container.two {}
+
+  .education__text-content {}
+
+  .experience__content-item-text {}
+
+  .experience__content-item * {}
+
+  .experience__content h2 {}
+
+  .experience__image-content-icon {}
+
+  .experience__content-item-text h3 {}
+
+  .experience__content-item-text h4 {}
+
+  .experience__content-below ul li {}
+
+  .experience__content-below ul {}
+
+  .experience__text-content {}
+
+  .experience__image-content {}
+
+  .experience__content-item-text small:first-of-type {}
+
+  .description__container.three {}
+
+  .experience__content-below {}
 
 }
 
 @media (max-width: 992px) {
 
-* {}
-html {}
-body {}
-.navbar__container {}
-.navbar__content {}
-.navbar__content-list {}
-.navbar__content-list-item a {}
-.navbar__content-list-item {}
-.navbar__content-item {}
-.banner__container {}
-.banner__container > img {}
-.header-section__text h2 {}
-.header-section__text {}
-.header-section__text p {}
-.education__container {}
-.education__content {}
-.skills__content {}
-.education__content h2 {}
-.education__content-item {}
-.education__content h3 {}
-.education__content-list-item {}
-.education__content-list {}
-.education__content-list-item {}
-.banner__skills-icon-list {}
-.skills__title-box h2 {}
-.header-section__text-background1 {}
-.header-section__text-background2 {}
-.skills__container {}
-.banner__skills-icon-list-item > img {}
-.description__container {}
-.description__text-content {}
-.description__text-content p {}
-.education__content-list-item p::before {}
-.description__content {}
-.portfolio__container {}
-.portfolio__content {}
-.portfolio__content-title {}
-.portfolio__content-title h2 {}
-.portfolio__content-items {}
-.portfolio__content-item a {}
-.portfolio__content-item {}
-.portfolio__content-item a img {}
-.portfolio__content-item-text > h2 {}
-.portfolio__content-item-keywords {}
-.portfolio__content-item-text {}
-.portfolio__content-item-text > p {}
-.portfolio__content-item-keywords p {}
-.experience__container {}
-.experience__content {}
-.experience__content-item {}
-.experience__content-item h2 {}
-.experience__content-item-text small {}
-.experience__content-item p {}
-.experience__content-title {}
-.experience__content-title h2 {}
-.experience__content-items {}
-.header-section__image {}
-.header-section__image img {}
-.header-section__content {}
-.description__content p {}
-.description__container.one {}
-.header-section__container {}
-.description__container.two {}
-.education__text-content {}
-.experience__content-item-text {}
-.experience__content-item * {}
-.experience__content h2 {}
-.experience__image-content-icon {}
-.experience__content-item-text h3 {}
-.experience__content-item-text h4 {}
-.experience__content-below ul li {}
-.experience__content-below ul {}
-.experience__text-content {}
-.experience__image-content {}
-.experience__content-item-text small:first-of-type {}
-.description__container.three {}
-.experience__content-below {}
+  * {}
+
+  html {}
+
+  body {}
+
+  .navbar__container {}
+
+  .navbar__content {}
+
+  .navbar__content-list {}
+
+  .navbar__content-list-item a {}
+
+  .navbar__content-list-item {}
+
+  .navbar__content-item {}
+
+  .banner__container {}
+
+  .banner__container>img {}
+
+  .header-section__text h2 {}
+
+  .header-section__text {}
+
+  .header-section__text p {}
+
+  .education__container {}
+
+  .education__content {}
+
+  .skills__content {}
+
+  .education__content h2 {}
+
+  .education__content-item {}
+
+  .education__content h3 {}
+
+  .education__content-list-item {}
+
+  .education__content-list {}
+
+  .education__content-list-item {}
+
+  .banner__skills-icon-list {}
+
+  .skills__title-box h2 {}
+
+  .header-section__text-background1 {}
+
+  .header-section__text-background2 {}
+
+  .skills__container {}
+
+  .banner__skills-icon-list-item>img {}
+
+  .description__container {}
+
+  .description__text-content {}
+
+  .description__text-content p {}
+
+  .education__content-list-item p::before {}
+
+  .description__content {}
+
+  .portfolio__container {}
+
+  .portfolio__content {}
+
+  .portfolio__content-title {}
+
+  .portfolio__content-title h2 {}
+
+  .portfolio__content-items {}
+
+  .portfolio__content-item a {}
+
+  .portfolio__content-item {}
+
+  .portfolio__content-item a img {}
+
+  .portfolio__content-item-text>h2 {}
+
+  .portfolio__content-item-keywords {}
+
+  .portfolio__content-item-text {}
+
+  .portfolio__content-item-text>p {}
+
+  .portfolio__content-item-keywords p {}
+
+  .experience__container {}
+
+  .experience__content {}
+
+  .experience__content-item {}
+
+  .experience__content-item h2 {}
+
+  .experience__content-item-text small {}
+
+  .experience__content-item p {}
+
+  .experience__content-title {}
+
+  .experience__content-title h2 {}
+
+  .experience__content-items {}
+
+  .header-section__image {}
+
+  .header-section__image img {}
+
+  .header-section__content {}
+
+  .description__content p {}
+
+  .description__container.one {}
+
+  .header-section__container {}
+
+  .description__container.two {}
+
+  .education__text-content {}
+
+  .experience__content-item-text {}
+
+  .experience__content-item * {}
+
+  .experience__content h2 {}
+
+  .experience__image-content-icon {}
+
+  .experience__content-item-text h3 {}
+
+  .experience__content-item-text h4 {}
+
+  .experience__content-below ul li {}
+
+  .experience__content-below ul {}
+
+  .experience__text-content {}
+
+  .experience__image-content {}
+
+  .experience__content-item-text small:first-of-type {}
+
+  .description__container.three {}
+
+  .experience__content-below {}
 
 }
 
 @media (max-width: 768px) {
 
-* {}
-html {}
-body {}
-.navbar__container {}
-.navbar__content {}
-.navbar__content-list {}
-.navbar__content-list-item a {}
-.navbar__content-list-item {}
-.navbar__content-item {}
-.banner__container {}
-.banner__container > img {}
-.header-section__text h2 {}
-.header-section__text {}
-.header-section__text p {}
-.education__container {}
-.education__content {}
-.skills__content {}
-.education__content h2 {}
-.education__content-item {}
-.education__content h3 {}
-.education__content-list-item {}
-.education__content-list {}
-.education__content-list-item {}
-.banner__skills-icon-list {}
-.skills__title-box h2 {}
-.header-section__text-background1 {}
-.header-section__text-background2 {}
-.skills__container {}
-.banner__skills-icon-list-item > img {}
-.description__container {}
-.description__text-content {}
-.description__text-content p {}
-.education__content-list-item p::before {}
-.description__content {}
-.portfolio__container {}
-.portfolio__content {}
-.portfolio__content-title {}
-.portfolio__content-title h2 {}
-.portfolio__content-items {}
-.portfolio__content-item a {}
-.portfolio__content-item {}
-.portfolio__content-item a img {}
-.portfolio__content-item-text > h2 {}
-.portfolio__content-item-keywords {}
-.portfolio__content-item-text {}
-.portfolio__content-item-text > p {}
-.portfolio__content-item-keywords p {}
-.experience__container {}
-.experience__content {}
-.experience__content-item {}
-.experience__content-item h2 {}
-.experience__content-item-text small {}
-.experience__content-item p {}
-.experience__content-title {}
-.experience__content-title h2 {}
-.experience__content-items {}
-.header-section__image {}
-.header-section__image img {}
-.header-section__content {}
-.description__content p {}
-.description__container.one {}
-.header-section__container {}
-.description__container.two {}
-.education__text-content {}
-.experience__content-item-text {}
-.experience__content-item * {}
-.experience__content h2 {}
-.experience__image-content-icon {}
-.experience__content-item-text h3 {}
-.experience__content-item-text h4 {}
-.experience__content-below ul li {}
-.experience__content-below ul {}
-.experience__text-content {}
-.experience__image-content {}
-.experience__content-item-text small:first-of-type {}
-.description__container.three {}
-.experience__content-below {}
+  * {}
+
+  html {}
+
+  body {}
+
+  .navbar__container {}
+
+  .navbar__content {}
+
+  .navbar__content-list {}
+
+  .navbar__content-list-item a {}
+
+  .navbar__content-list-item {}
+
+  .navbar__content-item {}
+
+  .banner__container {}
+
+  .banner__container>img {}
+
+  .header-section__text h2 {}
+
+  .header-section__text {}
+
+  .header-section__text p {}
+
+  .education__container {}
+
+  .education__content {}
+
+  .skills__content {}
+
+  .education__content h2 {}
+
+  .education__content-item {}
+
+  .education__content h3 {}
+
+  .education__content-list-item {}
+
+  .education__content-list {}
+
+  .education__content-list-item {}
+
+  .banner__skills-icon-list {}
+
+  .skills__title-box h2 {}
+
+  .header-section__text-background1 {}
+
+  .header-section__text-background2 {}
+
+  .skills__container {}
+
+  .banner__skills-icon-list-item>img {}
+
+  .description__container {}
+
+  .description__text-content {}
+
+  .description__text-content p {}
+
+  .education__content-list-item p::before {}
+
+  .description__content {}
+
+  .portfolio__container {}
+
+  .portfolio__content {}
+
+  .portfolio__content-title {}
+
+  .portfolio__content-title h2 {}
+
+  .portfolio__content-items {}
+
+  .portfolio__content-item a {}
+
+  .portfolio__content-item {}
+
+  .portfolio__content-item a img {}
+
+  .portfolio__content-item-text>h2 {}
+
+  .portfolio__content-item-keywords {}
+
+  .portfolio__content-item-text {}
+
+  .portfolio__content-item-text>p {}
+
+  .portfolio__content-item-keywords p {}
+
+  .experience__container {}
+
+  .experience__content {}
+
+  .experience__content-item {}
+
+  .experience__content-item h2 {}
+
+  .experience__content-item-text small {}
+
+  .experience__content-item p {}
+
+  .experience__content-title {}
+
+  .experience__content-title h2 {}
+
+  .experience__content-items {}
+
+  .header-section__image {}
+
+  .header-section__image img {}
+
+  .header-section__content {}
+
+  .description__content p {}
+
+  .description__container.one {}
+
+  .header-section__container {}
+
+  .description__container.two {}
+
+  .education__text-content {}
+
+  .experience__content-item-text {}
+
+  .experience__content-item * {}
+
+  .experience__content h2 {}
+
+  .experience__image-content-icon {}
+
+  .experience__content-item-text h3 {}
+
+  .experience__content-item-text h4 {}
+
+  .experience__content-below ul li {}
+
+  .experience__content-below ul {}
+
+  .experience__text-content {}
+
+  .experience__image-content {}
+
+  .experience__content-item-text small:first-of-type {}
+
+  .description__container.three {}
+
+  .experience__content-below {}
 
 }
 
 @media (max-width: 480px) {
 
-* {}
-html {}
-body {}
-.navbar__container {}
-.navbar__content {}
-.navbar__content-list {}
-.navbar__content-list-item a {}
-.navbar__content-list-item {}
-.navbar__content-item {}
-.banner__container {}
-.banner__container > img {}
-.header-section__text h2 {}
-.header-section__text {}
-.header-section__text p {}
-.education__container {}
-.education__content {}
-.skills__content {}
-.education__content h2 {}
-.education__content-item {}
-.education__content h3 {}
-.education__content-list-item {}
-.education__content-list {}
-.education__content-list-item {}
-.banner__skills-icon-list {}
-.skills__title-box h2 {}
-.header-section__text-background1 {}
-.header-section__text-background2 {}
-.skills__container {}
-.banner__skills-icon-list-item > img {}
-.description__container {}
-.description__text-content {}
-.description__text-content p {}
-.education__content-list-item p::before {}
-.description__content {}
-.portfolio__container {}
-.portfolio__content {}
-.portfolio__content-title {}
-.portfolio__content-title h2 {}
-.portfolio__content-items {}
-.portfolio__content-item a {}
-.portfolio__content-item {}
-.portfolio__content-item a img {}
-.portfolio__content-item-text > h2 {}
-.portfolio__content-item-keywords {}
-.portfolio__content-item-text {}
-.portfolio__content-item-text > p {}
-.portfolio__content-item-keywords p {}
-.experience__container {}
-.experience__content {}
-.experience__content-item {}
-.experience__content-item h2 {}
-.experience__content-item-text small {}
-.experience__content-item p {}
-.experience__content-title {}
-.experience__content-title h2 {}
-.experience__content-items {}
-.header-section__image {}
-.header-section__image img {}
-.header-section__content {}
-.description__content p {}
-.description__container.one {}
-.header-section__container {}
-.description__container.two {}
-.education__text-content {}
-.experience__content-item-text {}
-.experience__content-item * {}
-.experience__content h2 {}
-.experience__image-content-icon {}
-.experience__content-item-text h3 {}
-.experience__content-item-text h4 {}
-.experience__content-below ul li {}
-.experience__content-below ul {}
-.experience__text-content {}
-.experience__image-content {}
-.experience__content-item-text small:first-of-type {}
-.description__container.three {}
-.experience__content-below {}
+  * {}
+
+  html {}
+
+  body {}
+
+  .navbar__container {}
+
+  .navbar__content {}
+
+  .navbar__content-list {}
+
+  .navbar__content-list-item a {}
+
+  .navbar__content-list-item {}
+
+  .navbar__content-item {}
+
+  .banner__container {}
+
+  .banner__container>img {}
+
+  .header-section__text h2 {}
+
+  .header-section__text {}
+
+  .header-section__text p {}
+
+  .education__container {}
+
+  .education__content {}
+
+  .skills__content {}
+
+  .education__content h2 {}
+
+  .education__content-item {}
+
+  .education__content h3 {}
+
+  .education__content-list-item {}
+
+  .education__content-list {}
+
+  .education__content-list-item {}
+
+  .banner__skills-icon-list {}
+
+  .skills__title-box h2 {}
+
+  .header-section__text-background1 {}
+
+  .header-section__text-background2 {}
+
+  .skills__container {}
+
+  .banner__skills-icon-list-item>img {}
+
+  .description__container {}
+
+  .description__text-content {}
+
+  .description__text-content p {}
+
+  .education__content-list-item p::before {}
+
+  .description__content {}
+
+  .portfolio__container {}
+
+  .portfolio__content {}
+
+  .portfolio__content-title {}
+
+  .portfolio__content-title h2 {}
+
+  .portfolio__content-items {}
+
+  .portfolio__content-item a {}
+
+  .portfolio__content-item {}
+
+  .portfolio__content-item a img {}
+
+  .portfolio__content-item-text>h2 {}
+
+  .portfolio__content-item-keywords {}
+
+  .portfolio__content-item-text {}
+
+  .portfolio__content-item-text>p {}
+
+  .portfolio__content-item-keywords p {}
+
+  .experience__container {}
+
+  .experience__content {}
+
+  .experience__content-item {}
+
+  .experience__content-item h2 {}
+
+  .experience__content-item-text small {}
+
+  .experience__content-item p {}
+
+  .experience__content-title {}
+
+  .experience__content-title h2 {}
+
+  .experience__content-items {}
+
+  .header-section__image {}
+
+  .header-section__image img {}
+
+  .header-section__content {}
+
+  .description__content p {}
+
+  .description__container.one {}
+
+  .header-section__container {}
+
+  .description__container.two {}
+
+  .education__text-content {}
+
+  .experience__content-item-text {}
+
+  .experience__content-item * {}
+
+  .experience__content h2 {}
+
+  .experience__image-content-icon {}
+
+  .experience__content-item-text h3 {}
+
+  .experience__content-item-text h4 {}
+
+  .experience__content-below ul li {}
+
+  .experience__content-below ul {}
+
+  .experience__text-content {}
+
+  .experience__image-content {}
+
+  .experience__content-item-text small:first-of-type {}
+
+  .description__container.three {}
+
+  .experience__content-below {}
 
 }

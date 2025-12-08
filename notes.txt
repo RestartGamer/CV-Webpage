@@ -1,2 +1,4 @@
 use min width to control the break point of the flex wrap
 use media queries to control the break point for the shifting of the elements based on the viewport
+
+- add a variable for the margins between elements.

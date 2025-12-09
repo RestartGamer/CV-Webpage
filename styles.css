@@ -14,6 +14,10 @@
   --h3-gap: 0.5em;
   --h4-gap: 0.3em;
   --fade-animation-distance: 20px;
+  --p-title:1rem;
+  --p-main:1.6rem;
+  --p-submain:1.2rem;
+  --body-desktop-width:100ch;
 }
 
 html {
@@ -318,15 +322,16 @@ body {
 
 
 .banner__content {
-  width: 100%;
+  width: var(--body-desktop-width);
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .banner__text-container {
-  width: 27.4%;
+  width: 66ch;
   height: auto;
   /*! outline: 1px solid red; */
 }
@@ -393,11 +398,12 @@ body {
   width: 100vw;
   height: auto;
   box-sizing: content-box;
-  padding: 130px 0px;
+  padding: 70px 0px;
   margin-bottom: var(--element-gap);
   opacity: 0;
   transform: translateY(var(--fade-animation-distance));
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  min-width: var(--body-desktop-width);
 }
 
 .navbar__container.active {
@@ -413,6 +419,8 @@ body {
   align-items: center;
   justify-content: center;
   column-gap: 54px;
+  flex-wrap: wrap;
+  min-width: 480px;
 }
 
 .navbar__content-list {
@@ -651,7 +659,7 @@ body {
 
 .description__content p {
   color: white;
-  font-size: 1.6rem;
+  font-size: var(--p-main);
   line-height: 1.3em;
   width: 100%;
   height: max-content;
@@ -694,18 +702,13 @@ body {
 }
 
 .navbar__image-container {
-  width: 24.0%;
+  width: max-content;
   /*! outline: 1px solid red; */
   height: auto;
+  display: flex;
+  column-gap: 40px;
 }
 
-.navbar__image-content {
-  display: flex;
-  width: 14.7%;
-  height: auto;
-  justify-content: start;
-  column-gap: 18px;
-}
 
 .navbar__text-container {
   width: max-content;
@@ -718,6 +721,7 @@ body {
   height: auto;
   display: flex;
   column-gap: 47px;
+  flex-wrap: wrap;
 }
 
 .navbar__text-content a {
@@ -729,7 +733,7 @@ body {
 }
 
 .description__text-container {
-  width: 48%;
+  width: var(--body-desktop-width);
   height: auto;
 }
 
@@ -808,10 +812,14 @@ body {
   justify-content: center;
 }
 
-.description__item-image-content img {
+.description__item-image-content img,svg {
   object-fit: cover;
   width: 9%;
   height: auto;
+  border-radius:51px;
+    
+  transform: scale(1);
+  transition: transform 0.7s ease-in-out;
 }
 
 .description__item-text-container {
@@ -963,6 +971,8 @@ header {}
 .experience__text-content {
   width: 38.9%;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience__text-content>h3 {
@@ -983,23 +993,15 @@ header {}
   color: white;
   text-align: start;
   font-size: 1rem;
+  margin-bottom: 0.7em;
 }
 
 .experience__text-content li {
   color: white;
   text-align: start;
-  font-size: 1rem;
+  font-size: var(--p-submain);
   margin-left: 1em;
-}
-
-.navbar__image-content img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  padding: 13.2%;
-  max-width: 79px;
+  line-height: 1.3em;
 }
 
 .navbar__image-content svg {
@@ -1027,7 +1029,57 @@ header {}
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
+.experience__text-content > small:first-of-type {
+  margin-bottom:0.1em;
+}
 
+.description__item-image-content img:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s ease-in-out;
+}
+
+
+.navbar__image-content img:hover,svg:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s ease-in-out;
+}
+
+.banner__image-container > img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 100%;
+  height: auto;
+}
+
+.navbar__image-content {
+  display: block;
+  width: 70.2px;
+  height: max-content;
+}
+.navbar__image-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.navbar__image-content i {
+  font-family: "themify";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.navbar__image-content i::before {
+  content: "\e73d";
+}
+
+.navbar__image-content.icon-github img {
+  filter: invert(1);
+  /*! border-radius: 4.2px; */
+  width: 100.0%;
+  height: auto;
+}
 /* -----------------------------------------------------------
    MEDIA QUERIES WITH ALL SELECTORS (EMPTY)
 ----------------------------------------------------------- */
@@ -1349,6 +1401,7 @@ header {}
 }
 
 @media (max-width: 992px) {
+  .description__text-container {width: 80%;}
 
   * {}
 
@@ -1661,11 +1714,12 @@ header {}
   .description__container.three {}
 
   .experience__content-below {}
+  .description__text-container {}
 
 }
 
 @media (max-width: 480px) {
-
+  .description__text-container {}
   * {}
 
   html {}

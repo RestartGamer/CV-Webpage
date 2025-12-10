@@ -18,6 +18,8 @@
   --p-main:1.6rem;
   --p-submain:1.2rem;
   --body-desktop-width:110ch;
+  --animation-speed: 0.4s;
+  --animation-scale: 1.2;
 }
 
 html {
@@ -315,7 +317,7 @@ body {
 
 
 .banner__content {
-  width: 100%;
+  width: var(--body-desktop-width);
   max-width: var(--body-desktop-width);
   margin-inline: auto;
   display: flex;
@@ -728,6 +730,9 @@ body {
   font-size: 2.4rem;
   height: auto;
   /*! width: max-content; */
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 7px;
 }
 
 .description__text-container {
@@ -820,7 +825,7 @@ body {
   border-radius:51px;
     
   transform: scale(1);
-  transition: transform 0.7s ease-in-out;
+  transition: transform var(--animation-speed) ease-in-out;
   flex: 0 0 auto;
 }
 
@@ -1049,14 +1054,14 @@ header {}
 }
 
 .description__item-image-content img:hover {
-  transform: scale(1.1);
-  transition: transform 0.7s ease-in-out;
+  transform: scale(var(--animation-scale));
+  transition: transform var(--animation-speed) ease-in-out;
 }
 
 
 .navbar__image-content img:hover,svg:hover {
-  transform: scale(1.1);
-  transition: transform 0.7s ease-in-out;
+  transform: scale(var(--animation-scale));
+  transition: transform var(--animation-speed) ease-in-out;
 }
 
 .banner__image-container > img {
@@ -1078,7 +1083,7 @@ header {}
   height: 100%;
   object-fit: cover;
   transform: scale(1);
-  transition: transform 0.7s ease-in-out;
+  transition: transform var(--animation-speed) ease-in-out;
 }
 
 .navbar__image-content i {
@@ -1106,6 +1111,17 @@ header {}
 .navbar__image-content.icon-email {
   width: 71.8px;
   height: 88.7px;
+}
+
+.navbar__text-content a:hover {
+  background-color: #222;
+  border: 2px solid white;
+  transition: background-color var(--animation-speed) ease-in-out, border var(--animation-speed) ease-in-out;
+}
+
+.navbar__text-content a:active {
+  background-color: #5a5a5a;
+  border: 2px solid white;
 }
 
 /* -----------------------------------------------------------
@@ -1268,6 +1284,7 @@ header {}
 
   .experience__content-below {}
   .experience__content {}
+  .banner__content {}
 
 }
 
@@ -1428,6 +1445,7 @@ header {}
   .experience__content-below {}
   .description__item-text-content {width: 90%;}
   .experience__content {}
+  .banner__content {width: 76%;}
 
 }
 
@@ -1589,6 +1607,7 @@ header {}
   .experience__content-below {}
   .description__item-text-content {width: 90%;}
   .experience__content {}
+  .banner__content {width: 76%;}
 
 }
 
@@ -1750,6 +1769,7 @@ header {}
   .description__text-container {}
   .description__item-text-content {width: 90%;}
   .experience__content {width: 85%;}
+  .banner__content {width: 76%;}
 
 }
 
@@ -1910,5 +1930,6 @@ header {}
   .experience__content-below {}
   .description__item-text-content {width: 90%;}
   .experience__content {}
+  .banner__content {}
 
 }

@@ -9,7 +9,7 @@
   --h2: 3.7rem;
   --h3: 2.1rem;
   --h4: 1.4rem;
-  --element-gap: 115px;
+  --element-gap: 145.5px;
   --sub-element-gap: 90px;
   --h2-gap: 3em;
   --h3-gap: 0.5em;
@@ -18,7 +18,7 @@
   --p-title:1rem;
   --p-main:1.6rem;
   --p-submain:1.2rem;
-  --body-desktop-width:110ch;
+  --body-desktop-width:126.2ch;
   --animation-speed: 0.4s;
   --animation-scale: 1.2;
 }
@@ -391,7 +391,7 @@ body {
   width: 100vw;
   height: auto;
   box-sizing: content-box;
-  padding: 70px 0px;
+  margin-top: 70px;
   margin-bottom: var(--element-gap);
   opacity: 0;
   transform: translateY(var(--fade-animation-distance));
@@ -893,10 +893,11 @@ header {}
   justify-content: center;
   flex-wrap: wrap;
   gap: 66.6px;
+  text-decoration: none;
 }
 
 .portfolio__image-container {
-  width: 57.1%;
+  width: 41.1%;
   height: auto;
 }
 
@@ -907,7 +908,7 @@ header {}
 }
 
 .portfolio__text-container {
-  width: 87%;
+  width: 52%;
   height: auto;
 }
 
@@ -1292,7 +1293,10 @@ header {}
 @media (max-width: 1200px) {
 
   * {}
-
+.portfolio__text-container {
+  width: 52%;
+  height: auto;
+}
   html {}
 
   body {}
@@ -1452,9 +1456,15 @@ header {}
 
 @media (max-width: 992px) {
   .description__text-container {width: 80%;}
-
+.portfolio__image-container {
+  width: 41.1%;
+  height: auto;
+}
   * {}
-
+.portfolio__text-container {
+  width: 52%;
+  height: auto;
+}
   html {}
 
   body {}
@@ -1613,9 +1623,15 @@ header {}
 }
 
 @media (max-width: 768px) {
-
+.portfolio__image-container {
+  width: 41.1%;
+  height: auto;
+}
   * {}
-
+.portfolio__text-container {
+  width: 52%;
+  height: auto;
+}
   html {}
 
   body {}
@@ -1684,7 +1700,7 @@ header {}
 
   .portfolio__container {}
 
-  .portfolio__content {width: 90%;}
+  .portfolio__content {width: 78%;}
 
   .portfolio__content-title {}
 
@@ -1775,9 +1791,16 @@ header {}
 }
 
 @media (max-width: 480px) {
+  .portfolio__image-container {
+  width: 100%;
+  height: auto;
+}
   .description__text-container {}
   * {}
-
+.portfolio__text-container {
+  width: 100%;
+  height: auto;
+}
   html {}
 
   body {}

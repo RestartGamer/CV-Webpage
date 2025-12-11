@@ -1446,7 +1446,7 @@ header {}
 
   .experience__text-content {}
 
-  .experience__image-content {}
+  .experience__image-content {display: none;}
 
   .experience__content-item-text small:first-of-type {}
 
@@ -1616,7 +1616,7 @@ header {}
 
   .experience__text-content {}
 
-  .experience__image-content {}
+  .experience__image-content {display: none;}
 
   .experience__content-item-text small:first-of-type {}
 
@@ -1785,7 +1785,7 @@ header {}
 
   .experience__text-content {}
 
-  .experience__image-content {}
+  .experience__image-content {display: none;}
 
   .experience__content-item-text small:first-of-type {}
 
@@ -1956,7 +1956,7 @@ header {}
 
   .experience__text-content {}
 
-  .experience__image-content {}
+  .experience__image-content {display: none;}
 
   .experience__content-item-text small:first-of-type {}
 

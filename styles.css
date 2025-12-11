@@ -325,7 +325,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;          /* allow wrapping */
-  column-gap: 1.9rem;
+  column-gap: 4.3rem;
   row-gap: 2rem;
 }
 

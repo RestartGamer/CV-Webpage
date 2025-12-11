@@ -391,7 +391,7 @@ body {
   width: 100vw;
   height: auto;
   box-sizing: content-box;
-  margin-top: 70px;
+  margin-top: 57px;
   margin-bottom: 111.1px;
   opacity: 0;
   transform: translateY(var(--fade-animation-distance));

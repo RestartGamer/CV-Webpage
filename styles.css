@@ -715,6 +715,7 @@ body {
   flex: 1 1 auto;
   max-width: 100%;
   justify-content: center;
+  margin-left: -0.6rem;
 }
 
 .navbar__text-content {
@@ -1801,7 +1802,7 @@ header {}
 }
   .description__text-container {}
   * {}
-  .navbar__text-content {width: 100%;flex-direction: column;}
+  .navbar__text-content {width: 100%;/*! flex-direction: column; */column-gap: 1px;}
 .portfolio__text-container {
   width: 100%;
   height: auto;

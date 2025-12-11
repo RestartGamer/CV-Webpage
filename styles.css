@@ -357,7 +357,7 @@ body {
   word-break: break-word;
 }
 
-.banner__text-content p {width: 100%; height: auto; color: white; font-size: 2rem;word-break: break-word;}
+.banner__text-content p {width: 100%; height: auto; color: white; font-size: 1.9rem;word-break: break-word;}
 
 .banner__image-content {
   width: 100%;
@@ -392,7 +392,7 @@ body {
   height: auto;
   box-sizing: content-box;
   margin-top: 70px;
-  margin-bottom: 199px;
+  margin-bottom: 146.1px;
   opacity: 0;
   transform: translateY(var(--fade-animation-distance));
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;

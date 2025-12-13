@@ -2,129 +2,405 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta http-equiv="refresh" content="5" />-->
-    <link rel="stylesheet" href="style.css">
+
     <title>Portfolio-CV-Webpage</title>
+    <link rel="stylesheet" href="styles.css?v=3">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&family=Montserrat:wght@400&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
-    <nav>
-        <div class="navbar__container">
+    <nav id="home" aria-label="Main navigation">
+        <div class="navbar__container animated">
             <div class="navbar__content">
-                <a class="navbar__content-item" href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                        alt="LinkedIn logo" width="48" height="48" />
-                </a>
-                <ul class="navbar__content-list">
-                    <li class="navbar__content-list-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="navbar__content-list-item">
-                        <a href="about.html">About Me</a>
-                    </li>
-                    <li class="navbar__content-list-item">
-                        <a href="#">Portfolios</a>
-                    </li>
-                </ul>
+
+                <div class="navbar__image-container">
+                    <a class="navbar__image-content icon-linkedin" href="https://www.linkedin.com/in/can-korkmaz/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                            alt="LinkedIn icon" width="32" height="32" loading="lazy" />
+                    </a>
+                    <a class="navbar__image-content icon-github" href="https://github.com/RestartGamer" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.svgrepo.com/show/494241/github-rounded-border.svg"
+                            alt="GitHub icon" width="32" height="32" loading="lazy" />
+                    </a>
+                    <a class="navbar__image-content icon-email" href="mailto:ckorkmaz56@gmail.com">
+                        <img src="https://www.svgrepo.com/show/189982/email-mail.svg" alt="Email icon" width="32"
+                            height="32" loading="lazy" />
+                    </a>
+
+                    
+                </div>
+
+                <div class="navbar__text-container">
+                    <div class="navbar__text-content">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#portfolio">Portfolios</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </nav>
+
+
+
     <header>
-        <figure class="banner__container">
-            <img src="media/banner-image.jpg" alt="banner image">
-            <figcaption class="banner__text-content">
-                <h2>
-                    Can Korkmaz
-                </h2>
-                <p>
-                    Front-End Developer with skills in HTML, CSS and Javascript.
-                </p>
-            </figcaption>
-        </figure>
+        <section class="banner__container animated">
+            <div class="banner__content">
+
+                <div class="banner__text-container">
+                    <div class="banner__text-content">
+                        <h1>Can Korkmaz</h1>
+                        <p>Front-End Developer in Lisbon</p>
+                    </div>
+                </div>
+
+
+                <div class="banner__image-container">
+                    <div class="banner__image-content">
+                        <img src="media/profile-picture.jpg">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+
     </header>
     <main>
-        <section class="capabilities__container">
-            <div class="capabilities__education-content">
-                <h2>Education</h2>
-                <ul class="capabilities__education-content-list">
-                    <article class="capabilities__education-content-list-item">
-                        <h3>Education1</h3>
-                        <p>DescriptionDescriptionDescriptionDescriptionDescription</p>
-                    </article>
-                    <article class="capabilities__education-content-list-item">
-                        <h3>Education2</h3>
-                        <p>DescriptionDescriptionDescriptionDescriptionDescription</p>
-                    </article>
-                    <article class="capabilities__education-content-list-item">
-                        <h3>Education3</h3>
-                        <p>DescriptionDescriptionDescriptionDescriptionDescription</p>
-                    </article>
-                </ul>
-            </div>
-            <div class="capabilities__skills-content">
-                <div class="capabilities__skills-title-box">
-                    <h2>Languages</h2>
+
+        <section id="about" class="description__container">
+            <div class="description__content">
+
+                <div class="description__text-container one animated">
+                    <div class="description__text-content">
+                        <p>
+                            I’m a front-end developer focused on building clean, responsive interfaces with
+                            <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+                            Through Coursera’s Front-End Development program I designed and built the
+                            <strong>Mangata &amp; Gallo</strong> e-commerce portfolio site from scratch,
+                            simulating a real product experience from homepage to checkout.
+                        </p>
+                    </div>
                 </div>
-                <ul class="capabilities__skills-icon-list">
-                    <li class="capabilities__skills-icon-list-item html">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML5 logo" width="48" height="48" />
-                    </li>
-                    <li class="capabilities__skills-icon-list-item css">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                            alt="CSS3 logo" width="48" height="48" />
-                    </li>
-                    <li class="capabilities__skills-icon-list-item javascript">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="JavaScript logo" width="48" height="48" />
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="portfolios__container">
-            <div class="portfolios__content">
-                <article class="portfolios__content-item">
-                    <a href="https://can-k-portfolio.netlify.app">
-                        <h2>Mangata & Gallo Portfolio</h2>
-                        <img src="media/portfolio-thumbnail1.jpg" alt="portfolio thumbnail 1">
-                    </a>
+
+                <div class="description__item-container languages animated">
+                    <div class="description__item-content">
+
+                        <div class="description__item-title-container">
+                            <h2>Languages</h2>
+                        </div>
+
+                        <div class="description__item-image-container">
+                            <div class="description__item-image-content">
+
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5 logo" width="48" height="48">
+
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS3 logo" width="48" height="48">
 
 
-                </article>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript logo" width="48" height="48">
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="description__text-container two animated">
+                    <div class="description__text-content">
+                        <p>
+                            Before front-end, I worked in IT support, which taught me to stay calm under
+                            pressure, troubleshoot methodically, and take responsibility for the user
+                            experience from the moment they report a problem until it’s solved. That
+                            background shapes how I build interfaces today: I care about clarity,
+                            reliability, and making things feel simple for the person using them.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="description__item-container education">
+                    <div class="description__item-content">
+
+                        <div class="description__item-title-container animated">
+                            <h2>Education</h2>
+
+                        </div>
+                        <div class="description__item-text-container">
+
+                            <div class="description__item-text-content animated">
+                                <h3>Front-End Development Program – Coursera (Online)</h3>
+                                <ul>
+                                    <li class="description__item-text">
+                                        Completed a structured front-end curriculum focused on HTML5, CSS3, and
+                                        JavaScript,
+                                        including responsive layout, accessibility, and component-based UI patterns.
+                                        Built the <strong>Mangata &amp; Gallo</strong> e-commerce portfolio site from
+                                        scratch to
+                                        simulate a real client project.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="description__item-text-content animated">
+                                <h3>Electronics Engineering Studies – Instituto Politécnico de Setúbal (IPS)</h3>
+                                <ul class="education__content-list">
+                                    <li class="education__content-list-item">
+                                        Studied core concepts of electronics, digital systems, and circuit fundamentals,
+                                        developing an analytical and systems-oriented way of thinking that now supports
+                                        my work
+                                        in web development.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="description__item-text-content animated">
+                                <h3>Technical Learning Through IT Support Work</h3>
+                                <ul class="education__content-list">
+                                    <li class="education__content-list-item">
+                                        Gained hands-on experience troubleshooting software, hardware, and network
+                                        issues in a
+                                        professional IT environment, strengthening problem-solving skills, attention to
+                                        detail,
+                                        and resilience under pressure.
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="description__text-container three animated">
+                    <div class="description__text-content">
+                        <p>
+                            On the technical side, I work with semantic HTML, modern CSS
+                            (Flexbox, Grid, custom properties), and JavaScript to add interactivity and
+                            basic state management. I pay attention to layout, spacing, and typography,
+                            but I also try to keep my code organized and readable so it’s easy to extend
+                            and maintain.
+                        </p>
+
+                        <p>
+                            Right now I’m looking for opportunities as a
+                            <strong>junior front-end developer</strong> where I can contribute to real
+                            projects, learn from more experienced engineers, and keep growing my skills
+                            in responsive design, accessibility, and component-based UI.
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
         </section>
+
+
+        <section id="portfolio" class="portfolio__container animated">
+
+            <div class="portfolio__title-container">
+                <h2>My Work</h2>
+            </div>
+
+            <a class="portfolio__content" href="https://can-k-portfolio.netlify.app/">
+                <div class="portfolio__image-container">
+                    <img src="media/mg-white.png">
+                </div>
+
+                <div class="portfolio__text-container">
+                    <div class="portfolio__text-content">
+                        <h3>Mangata &amp; Gallo Portfolio</h3>
+                        <p>A responsive e-commerce concept website for the fictional jewelry brand Mangata &
+                            Gallo, built to simulate a real client project from homepage to product highlights
+                            and promotional sections. The focus is on clean layout, typography, and a smooth
+                            browsing experience across different screen sizes.</p>
+                        <div class="portfolio__text-content-keywords">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+
+
         <section class="experience__container">
-            <div class="experience__content">
-                <article class="experience__content-item">
-                    <h2>Title1</h2>
-                    <small>Date - Date</small>
-                    <p>This is the description of my job.</p>
-                </article>
-                <article class="experience__content-item">
-                    <h2>Title2</h2>
-                    <small>Date - Date</small>
-                    <p>This is the description of my job.</p>
-                </article>
-                <article class="experience__content-item">
-                    <h2>Title3</h2>
-                    <small>Date - Date</small>
-                    <p>This is the description of my job.</p>
-                </article>
-                <article class="experience__content-item">
-                    <h2>Title4</h2>
-                    <small>Date - Date</small>
-                    <p>This is the description of my job.</p>
-                </article>
+            <div class="experience__title-container animated">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="experience__content animated">
+                <div class="experience__image-content">
+                    <svg class="experience__image-content-icon" width="64" height="64" viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <!-- Briefcase body -->
+                            <rect x="14" y="22" width="36" height="26" rx="4" />
+
+                            <!-- Handle -->
+                            <path d="M24 22v-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4" />
+
+                            <!-- Top separation line -->
+                            <path d="M14 30h36" />
+
+                            <!-- Center latch detail -->
+                            <path d="M30 30v5" />
+                            <path d="M34 30v5" />
+
+                            <!-- Subtle bottom line (base shadow hint) -->
+                            <path d="M18 48h28" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="experience__text-content">
+                    <h3>Technology Support Analyst</h3>
+                    <h4>WTW - Full-time</h4>
+                    <small>Mar 2024 - Present</small>
+                    <small>Lisbon, Portugal</small>
+                    <ul>
+                        <li>
+                            Account administration: new user requests, leaver requests, password requests
+                            etc.
+                        </li>
+                        <li>
+                            Address user concerns regarding hardware, software, and networking.
+                        </li>
+                        <li>
+                            Coordinates with L2/other support teams when applicable.
+                        </li>
+                        <li>
+                            Handles Special Projects as applicable and processes Software Installation
+                            Requests.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience__content animated">
+                <div class="experience__image-content">
+                    <svg class="experience__image-content-icon" width="64" height="64" viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <!-- Briefcase body -->
+                            <rect x="14" y="22" width="36" height="26" rx="4" />
+
+                            <!-- Handle -->
+                            <path d="M24 22v-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4" />
+
+                            <!-- Top separation line -->
+                            <path d="M14 30h36" />
+
+                            <!-- Center latch detail -->
+                            <path d="M30 30v5" />
+                            <path d="M34 30v5" />
+
+                            <!-- Subtle bottom line (base shadow hint) -->
+                            <path d="M18 48h28" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="experience__text-content">
+                    <h3>Google Ads Optimization</h3>
+                    <h4>Cognizant - Full-time</h4>
+                    <small>Jan 2022 - Oct 2023</small>
+                    <small>Lisbon, Portugal</small>
+                    <ul>
+                        <li>
+                            Executing optimization tasks for Google LCS accounts within the Search Network
+                            by presenting strategies to account managers: CTR, CPA, ROAS, keyword
+                            expansions, bid adjustment, budget management etc.) following the industry's
+                            best practices and policies
+                        </li>
+                        <li>
+                            Conduct market research by analyzing industry trends, consumer demographics and
+                            competitor activities to improve marketing strategy.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience__content animated">
+                <div class="experience__image-content">
+                    <svg class="experience__image-content-icon" width="64" height="64" viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <!-- Briefcase body -->
+                            <rect x="14" y="22" width="36" height="26" rx="4" />
+
+                            <!-- Handle -->
+                            <path d="M24 22v-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4" />
+
+                            <!-- Top separation line -->
+                            <path d="M14 30h36" />
+
+                            <!-- Center latch detail -->
+                            <path d="M30 30v5" />
+                            <path d="M34 30v5" />
+
+                            <!-- Subtle bottom line (base shadow hint) -->
+                            <path d="M18 48h28" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="experience__text-content">
+                    <h3>Google Ad Optimization</h3>
+                    <h4>Majorel Portugal · Full-time</h4>
+                    <small>Aug 2020 – Oct 2021</small>
+                    <small>Lisbon, Portugal</small>
+                    <ul>
+                        <li>
+                            Handled in- and outbound phone calls, live chat, and email support for Google
+                            Ads / Google Ad Manager in German, helping advertisers resolve account and
+                            campaign issues.
+                        </li>
+                        <li>
+                            Implemented and adjusted predefined campaign settings (bids, budgets, targeting,
+                            and formats) in line with internal workflows and Google policies.
+                        </li>
+                        <li>
+                            Wrote and adapted ad texts and coordinated basic visual presentation to improve
+                            clarity, relevance, and alignment with brand and policy guidelines.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
+
+
 
 
     </main>
-    <footer>
 
-    </footer>
+
 </body>
+<script src="responsive.js"></script>
 
 </html>

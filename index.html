@@ -1,16 +1,47 @@
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
     <meta name="description"
         content="Front-end developer in Lisbon building clean, responsive interfaces with HTML, CSS, and JavaScript.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta http-equiv="refresh" content="5" />-->
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Can Korkmaz">
+    <meta property="og:title" content="Can Korkmaz | Front-End Developer">
+    <meta property="og:description"
+        content="Front-end developer in Lisbon building clean, responsive interfaces with HTML, CSS, and JavaScript.">
+    <meta property="og:url" content="https://can-k-cv.netlify.app/">
+
+    <!-- Use an absolute URL. Recommended: 1200x630 PNG/JPG -->
+    <meta property="og:image" content="https://can-k-cv.netlify.app/media/preview-CV.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Can Korkmaz portfolio preview">
+
+    <!-- Optional but highly recommended (X/Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Can Korkmaz | Front-End Developer">
+    <meta name="twitter:description"
+        content="Front-end developer in Lisbon building clean, responsive interfaces with HTML, CSS, and JavaScript.">
+    <meta name="twitter:image" content="https://can-k-cv.netlify.app/media/preview-CV.png">
+
+    <link rel="canonical" href="https://can-k-cv.netlify.app/">
+    <meta name="robots" content="index,follow">
+
+
 
     <title>Can Korkmaz | Front-End Developer</title>
-    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+    <link rel="manifest" href="media/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css?v=3">
@@ -22,10 +53,28 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet" />
+
+
+    <noscript>
+        <style>
+            .animated {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
     <script src="responsive.js" defer></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <nav id="home" aria-label="Main navigation">
         <div class="navbar__container animated">
             <div class="navbar__content">
@@ -94,9 +143,9 @@
 
 
     </header>
-    <main>
+    <main id="main">
 
-        <section id="about" class="description__container" aria-labelledby="about-title">
+        <section id="about" class="description__container">
             <div class="description__content">
 
                 <div class="description__text-container one animated">
@@ -235,7 +284,8 @@
                 <h2 id="portfolio-title">My Work</h2>
             </div>
 
-            <a class="portfolio__content" href="https://can-k-portfolio.netlify.app/">
+            <a class="portfolio__content" href="https://can-k-portfolio.netlify.app/" target="_blank"
+                rel="noreferrer noopener">
                 <div class="portfolio__image-container">
                     <img src="media/mg-white.png" alt="Mangata &amp; Gallo project logo" width="600" height="300"
                         loading="lazy" decoding="async">
@@ -414,4 +464,3 @@
 </body>
 
 </html>
-```

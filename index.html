@@ -1,12 +1,18 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Front-end developer in Lisbon building clean, responsive interfaces with HTML, CSS, and JavaScript.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta http-equiv="refresh" content="5" />-->
 
-    <title>Portfolio-CV-Webpage</title>
+    <title>Can Korkmaz | Front-End Developer</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css?v=3">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&family=Montserrat:wght@400&display=swap"
@@ -16,6 +22,7 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet" />
+    <script src="responsive.js" defer></script>
 </head>
 
 <body>
@@ -24,22 +31,24 @@
             <div class="navbar__content">
 
                 <div class="navbar__image-container">
-                    <a class="navbar__image-content icon-linkedin" href="https://www.linkedin.com/in/can-korkmaz/" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="navbar__image-content icon-linkedin" href="https://www.linkedin.com/in/can-korkmaz/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Open Can Korkmaz on LinkedIn (opens in a new tab)">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                            alt="LinkedIn icon" width="32" height="32" loading="lazy" />
+                            alt="" width="32" height="32" loading="lazy" />
                     </a>
                     <a class="navbar__image-content icon-github" href="https://github.com/RestartGamer" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="https://www.svgrepo.com/show/494241/github-rounded-border.svg"
-                            alt="GitHub icon" width="32" height="32" loading="lazy" />
-                    </a>
-                    <a class="navbar__image-content icon-email" href="mailto:ckorkmaz56@gmail.com">
-                        <img src="https://www.svgrepo.com/show/189982/email-mail.svg" alt="Email icon" width="32"
+                        rel="noopener noreferrer" aria-label="Open RestartGamer on GitHub (opens in a new tab)">
+                        <img src="https://www.svgrepo.com/show/494241/github-rounded-border.svg" alt="" width="32"
                             height="32" loading="lazy" />
                     </a>
+                    <a class="navbar__image-content icon-email" href="mailto:ckorkmaz56@gmail.com"
+                        aria-label="Send an email to ckorkmaz56@gmail.com">
+                        <img src="https://www.svgrepo.com/show/189982/email-mail.svg" alt="" width="32" height="32"
+                            loading="lazy" />
+                    </a>
 
-                    
+
                 </div>
 
                 <div class="navbar__text-container">
@@ -70,7 +79,8 @@
 
                 <div class="banner__image-container">
                     <div class="banner__image-content">
-                        <img src="media/profile-picture.jpg">
+                        <img src="media/profile-picture.jpg" alt="Portrait of Can Korkmaz" width="220" height="220"
+                            decoding="async">
                     </div>
                 </div>
 
@@ -86,7 +96,7 @@
     </header>
     <main>
 
-        <section id="about" class="description__container">
+        <section id="about" class="description__container" aria-labelledby="about-title">
             <div class="description__content">
 
                 <div class="description__text-container one animated">
@@ -219,15 +229,16 @@
         </section>
 
 
-        <section id="portfolio" class="portfolio__container animated">
+        <section id="portfolio" class="portfolio__container animated" aria-labelledby="portfolio-title">
 
             <div class="portfolio__title-container">
-                <h2>My Work</h2>
+                <h2 id="portfolio-title">My Work</h2>
             </div>
 
             <a class="portfolio__content" href="https://can-k-portfolio.netlify.app/">
                 <div class="portfolio__image-container">
-                    <img src="media/mg-white.png">
+                    <img src="media/mg-white.png" alt="Mangata &amp; Gallo project logo" width="600" height="300"
+                        loading="lazy" decoding="async">
                 </div>
 
                 <div class="portfolio__text-container">
@@ -250,9 +261,9 @@
 
 
 
-        <section class="experience__container">
+        <section class="experience__container" aria-labelledby="experience-title">
             <div class="experience__title-container animated">
-                <h2>Work Experience</h2>
+                <h2 id="experience-title">Work Experience</h2>
             </div>
             <div class="experience__content animated">
                 <div class="experience__image-content">
@@ -281,7 +292,7 @@
                 <div class="experience__text-content">
                     <h3>Technology Support Analyst</h3>
                     <h4>WTW - Full-time</h4>
-                    <small>Mar 2024 - Present</small>
+                    <small><time datetime="2024-03">Mar 2024</time> - Present</small>
                     <small>Lisbon, Portugal</small>
                     <ul>
                         <li>
@@ -329,7 +340,7 @@
                 <div class="experience__text-content">
                     <h3>Google Ads Optimization</h3>
                     <h4>Cognizant - Full-time</h4>
-                    <small>Jan 2022 - Oct 2023</small>
+                    <small><time datetime="2022-01">Jan 2022</time> - <time datetime="2023-10">Oct 2023</time></small>
                     <small>Lisbon, Portugal</small>
                     <ul>
                         <li>
@@ -373,7 +384,7 @@
                 <div class="experience__text-content">
                     <h3>Google Ad Optimization</h3>
                     <h4>Majorel Portugal · Full-time</h4>
-                    <small>Aug 2020 – Oct 2021</small>
+                    <small><time datetime="2020-08">Aug 2020</time> – <time datetime="2021-10">Oct 2021</time></small>
                     <small>Lisbon, Portugal</small>
                     <ul>
                         <li>
@@ -401,6 +412,6 @@
 
 
 </body>
-<script src="responsive.js"></script>
 
 </html>
+```

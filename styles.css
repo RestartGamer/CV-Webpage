@@ -880,6 +880,10 @@ main {
   transition: transform 1s ease-in-out;
 }
 
+.description__text-content a {
+  color: white;
+}
+
 /* -----------------------------------------------------------
    MEDIA QUERIES WITH ALL SELECTORS (EMPTY)
 ----------------------------------------------------------- */

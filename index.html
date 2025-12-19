@@ -154,7 +154,9 @@
                             I’m a junior front-end developer focused on building clean, responsive interfaces with
                             <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
                             Through Coursera’s Front-End Development program I designed and built the
-                            <a href="https://can-k-cv.netlify.app"><strong>Mangata &amp; Gallo</strong></a> e-commerce portfolio site from scratch,
+                            <a href="https://can-k-portfolio.netlify.app/" target="_blank"
+                                rel="noreferrer noopener"><strong>Mangata &amp; Gallo</strong></a> e-commerce
+                            portfolio site from scratch,
                             simulating a real product experience from homepage to checkout.
                         </p>
                     </div>
@@ -171,14 +173,18 @@
                             <div class="description__item-image-content">
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                    alt="HTML5 logo" width="48" height="48">
+                                    alt="HTML5 logo" aria-label="HTML5 logo" title="HTML5" width="48" height="48"
+                                    decoding="async">
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                    alt="CSS3 logo" width="48" height="48">
-
+                                    alt="CSS3 logo" aria-label="CSS3 logo" title="CSS3" width="48" height="48"
+                                    decoding="async">
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                    alt="JavaScript logo" width="48" height="48">
+                                    alt="JavaScript logo" aria-label="JavaScript logo" title="JavaScript" width="48"
+                                    height="48" decoding="async">
+
+
 
 
 
@@ -191,11 +197,9 @@
                 <div class="description__text-container two animated">
                     <div class="description__text-content">
                         <p>
-                            Before front-end, I worked in IT support, which taught me to stay calm under
-                            pressure, troubleshoot methodically, and take responsibility for the user
-                            experience from the moment they report a problem until it’s solved. That
-                            background shapes how I build interfaces today: I care about clarity,
-                            reliability, and making things feel simple for the person using them.
+                            I’m currently in IT Support (ITSD L1), supporting B2B clients and managing tickets
+                            end-to-end in ServiceNow. I’m now transitioning into front-end development,
+                            bringing strong habits around documentation, ownership, and delivering within SLAs.
                         </p>
                     </div>
                 </div>
@@ -285,22 +289,25 @@
                 <h2 id="portfolio-title">My Work</h2>
             </div>
 
-            <a class="portfolio__content" href="https://can-k-portfolio.netlify.app/" target="_blank"
-                rel="noreferrer noopener">
+            <section class="portfolio__content">
 
 
                 <div class="portfolio__text-container">
                     <div class="portfolio__text-content">
                         <div class="portfolio__text-content-titleandimage">
                             <h3>Mangata &amp; Gallo Portfolio</h3>
-                            <div class="portfolio__image-container">
+                            <a class="portfolio__image-container" href="https://can-k-portfolio.netlify.app/"
+                                target="_blank" rel="noreferrer noopener">
                                 <img src="media/mg-white.png" alt="Mangata &amp; Gallo project logo" width="600"
                                     height="300" loading="lazy" decoding="async">
-                            </div>
+                            </a>
                         </div>
 
-                        <p>A responsive e-commerce concept website for the fictional jewelry brand Mangata &
-                            Gallo, built to simulate a real client project from homepage to product highlights
+                        <p>A responsive e-commerce concept website for the fictional jewelry brand <a
+                                href="https://can-k-portfolio.netlify.app/" target="_blank"
+                                rel="noreferrer noopener"><strong>Mangata &
+                                    Gallo</strong></a>, built to simulate a real client project from homepage to product
+                            highlights
                             and promotional sections. The focus is on clean layout, typography, and a smooth
                             browsing experience across different screen sizes.</p>
                         <div class="portfolio__text-content-keywords">
@@ -308,9 +315,15 @@
                             <p>CSS</p>
                             <p>JavaScript</p>
                         </div>
+                        <div class="calltoaction__content">
+                            <a class="calltoaction__button" href="mailto:ckorkmaz56@gmail.com">
+                                <h3>Link to page</h3>
+                                <div></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </a>
+            </section>
 
         </section>
 
@@ -460,7 +473,46 @@
             </div>
         </section>
 
+        <section class="calltoaction__container">
+            <div class="calltoaction__content">
+                <a class="calltoaction__button" href="mailto:ckorkmaz56@gmail.com">
+                    <h3>Contact Me</h3>
+                    <div></div>
+                </a>
+            </div>
 
+        </section>
+
+        <section class="contact-form__container animated">
+            <div class="contact-form__content">
+                <h2>Get in Touch</h2>
+                <p>Have questions? Fill out the form and we’ll get back to you.</p>
+
+                <form class="contact-form__form" method="post" data-netlify="true" name="contact" autocomplete="on">
+                    <input type="hidden" name="form-name" value="contact">
+
+                    <div class="contact-form__form-group name">
+                        <label for="name">Name</label>
+                        <input class="contact-form__input-box name" type="text" id="name" name="name"
+                            placeholder="Your name" autocomplete="name" required>
+                    </div>
+
+                    <div class="contact-form__form-group email">
+                        <label for="email">Email</label>
+                        <input class="contact-form__input-box email" type="email" id="email" name="email"
+                            placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="contact-form__form-group message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..."
+                            autocomplete="off" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
 
 
     </main>

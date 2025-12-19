@@ -578,20 +578,20 @@ body {
 }
 
 .portfolio__image-container {
-  width: 168px;
+  width: 81px;
   height: auto;
-  border: 2px solid #6fd6ff;
-  padding: 10px;
+  /*! border: 2px solid #6fd6ff; */
+  padding: 13px;
   transform: scale(1);
   transition: transform 1s ease-in-out;
-  margin-right: 10.7%;
-  flex: 0 1 auto;
+  /*! margin-right: 23.7%; */
+  /*! flex: 0 1 auto; */
 }
 
 .portfolio__image-container img {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .portfolio__text-container {
@@ -603,13 +603,14 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1.4em;
+  align-items: center;
 }
 
 .portfolio__text-content-titleandimage > h3 {
   color: white;
   text-align: start;
   font-size: var(--h3);
-  margin-bottom: var(--h3-gap);
+  padding-bottom: 0.2em;
 }
 
 .portfolio__text-content>p {
@@ -638,6 +639,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  margin-bottom: var(--sub-element-gap);
 }
 
 .experience__title-container {
@@ -870,19 +872,200 @@ main {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  column-gap: 37px;
+  column-gap: 51px;
+  margin-bottom: var(--h3-gap);
 }
 
 .portfolio__image-container:hover {
-  transform: scale(1.2);
-  transition: transform 1s ease-in-out;
+  transform: scale(1.1);
 }
 
 .description__text-content a {
   color: white;
 }
+
+.contact-form__container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: start;
+  --bg-color: #eaeaea;
+  margin-bottom: var(--element-gap);
+}
+.contact-form__content {
+}
+.contact-form__content {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.contact-form__container * {
+  color: white;
+}
+.contact-form__form {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7em;
+}
+.contact-form__form-group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form__form-group.message textarea {
+  margin-bottom: 0.6em;
+  width: 100%;
+  min-height: 189px;
+  color: black;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+}
+
+.contact-form__form-group label {
+  font-size: var(--p-submain);
+  font-weight: bold;
+}
+.contact-form__content p {
+  font-size: var(--p-main);
+  margin-bottom: 0.9em;
+}
+.contact-form__content h2 {
+  margin-bottom: 1em;
+}
+.contact-form__form-group input {
+  width: 28.5%;
+  height: auto;
+  padding-block: 0.4em;
+  color: black;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  min-width: 153px;
+}
+
+.calltoaction__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--sub-element-gap);
+}
+.calltoaction__button {
+  all: unset;
+  display:block;
+  width:max-content;
+  height:max-content;
+  background-color: #373737;
+  padding-block: 0.6em;
+  padding-inline: 1em;
+  --border-radius:5.9px;
+  border-radius: var(--border-radius);
+  color: #54e7ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #aff4ff;
+  position: relative;
+  transform:rotate(0deg);
+  transition:transform 0.8s ease-in-out;
+}
+
+.calltoaction__button > h3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  transform:scale(1);
+  transition:transform 2s ease-in-out, color 1s ease-in-out;
+}
+
+.calltoaction__button div {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: var(--border-radius);
+}
+
+.calltoaction__content {
+  width: max-content;
+  height: max-content;
+  padding: 3%;
+}
+
+
+.calltoaction__content:hover .calltoaction__button div {
+  transform: scaleY(1);
+  transition: transform 1s ease-in-out;
+  
+}
+.calltoaction__content:hover .calltoaction__button h3 {
+  transform:scale(1.1);
+  transition:transform 1s ease-in-out, color 1s ease-in-out;
+  color:black;
+}
+.calltoaction__content:hover .calltoaction__button{
+  transform:rotate(-360deg);
+  transition:transform 0.8s ease-in-out;
+  
+}
+
+.calltoaction__content:active .calltoaction__button div {
+  background-color:grey;
+}
+.calltoaction__content:hover {
+  cursor:pointer;
+}
+
+.contact-form__form-group.message button[type="submit"] {
+  all: unset;
+  width: auto;
+  height: auto;
+  align-self: end;
+
+  background-color: #000;
+  color: #54e7ff;           /* lightning blue */
+  border: 2px solid #54e7ff;
+
+  text-align: center;
+  padding-block: 0.35em;
+  padding-inline: 0.95em;
+  border-radius: 0.3em;
+
+  cursor: pointer;
+  transition: transform 0.18s ease-in-out, background-color 0.18s ease-in-out, color 0.18s ease-in-out, border-color 0.18s ease-in-out;
+}
+
+.contact-form__form-group.message button[type="submit"]:hover {
+  background-color: #54e7ff;
+  color: #000;
+  transform: translateY(-1px);
+}
+
+.contact-form__form-group.message button[type="submit"]:active {
+  transform: translateY(0);
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+
+.portfolio__text-content p > a {
+  color: white;
+}
+
+
 
 /* -----------------------------------------------------------
    MEDIA QUERIES WITH ALL SELECTORS (EMPTY)

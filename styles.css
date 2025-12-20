@@ -1005,21 +1005,40 @@ main {
   padding: 3%;
 }
 
+/* Hover effects ONLY for real hover devices (desktop/laptop) */
+@media (hover: hover) and (pointer: fine) {
+  .calltoaction__content:hover .calltoaction__button div {
+    transform: scaleY(1);
+  }
 
-.calltoaction__content:hover .calltoaction__button div {
-  transform: scaleY(1);
-  transition: transform 1s ease-in-out;
-  
+  .calltoaction__content:hover .calltoaction__button h3 {
+    transform: scale(1.1);
+    color: black;
+  }
+
+  .calltoaction__content:hover .calltoaction__button {
+    transform: rotate(-360deg);
+  }
+
+  .calltoaction__content:hover {
+    cursor: pointer;
+  }
 }
-.calltoaction__content:hover .calltoaction__button h3 {
-  transform:scale(1.1);
-  transition:transform 1s ease-in-out, color 1s ease-in-out;
-  color:black;
-}
-.calltoaction__content:hover .calltoaction__button{
-  transform:rotate(-360deg);
-  transition:transform 0.8s ease-in-out;
-  
+
+/* Touch devices: use :active so it always returns to normal after release */
+@media (hover: none) and (pointer: coarse) {
+  .calltoaction__content:active .calltoaction__button div {
+    transform: scaleY(1);
+  }
+
+  .calltoaction__content:active .calltoaction__button h3 {
+    transform: scale(1.1);
+    color: black;
+  }
+
+  .calltoaction__content:active .calltoaction__button {
+    transform: rotate(-360deg);
+  }
 }
 
 .calltoaction__content:active .calltoaction__button div {
@@ -1114,9 +1133,6 @@ main {
 
 @media (max-width: 480px) {
   
-  .calltoaction__content:active .calltoaction__button {
-    transform:rotate(360);
-  }
   
   .portfolio__image-container {
 }

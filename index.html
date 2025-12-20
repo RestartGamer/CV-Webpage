@@ -488,9 +488,7 @@
                 <h2>Get in Touch</h2>
                 <p>Have questions? Fill out the form and we’ll get back to you.</p>
 
-                <form class="contact-form__form" method="post" data-netlify="true" name="contact" autocomplete="on">
-                    <input type="hidden" name="form-name" value="contact">
-
+                <form class="contact-form__form" id="contactForm" autocomplete="on">
                     <div class="contact-form__form-group name">
                         <label for="name">Name</label>
                         <input class="contact-form__input-box name" type="text" id="name" name="name"
@@ -510,6 +508,29 @@
                         <button type="submit">Send Message</button>
                     </div>
                 </form>
+
+                <script>
+                    const form = document.getElementById("contactForm");
+
+                    form.addEventListener("submit", (e) => {
+                        e.preventDefault();
+
+                        const name = document.getElementById("name").value.trim();
+                        const email = document.getElementById("email").value.trim();
+                        const message = document.getElementById("message").value.trim();
+
+                        const to = "ckorkmaz56@gmail.com";
+                        const subject = encodeURIComponent(`Portfolio contact from ${name || "Someone"}`);
+                        const body = encodeURIComponent(
+                            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+                        );
+
+                        // Opens the user's default mail app/handler
+                        window.location.href = `mailto:${to}?subject=${subject}&body=${encodeURIComponent(`From: ${name || "Someone"} (${email || "no-email"})\n---\nMessage:\n${message}`)}`;
+
+                    });
+                </script>
+
 
             </div>
         </section>

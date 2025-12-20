@@ -1113,6 +1113,11 @@ main {
 }
 
 @media (max-width: 480px) {
+  
+  .calltoaction__content:active .calltoaction__button {
+    transform:rotate(360);
+  }
+  
   .portfolio__image-container {
 }
   .navbar__text-content a {padding: 0px;font-size: 1.6rem;}

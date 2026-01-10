@@ -3,6 +3,8 @@
   --h2: 3rem;
   --h3: 1.9rem;
   --h4: 1.4rem;
+  --p-main:1.4rem;
+  --p-submain:1.2rem;
   --element-gap: 103.5px;
   --sub-element-gap: 90px;
   --h2-gap: 3em;
@@ -501,11 +503,12 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  gap: 9px;
 }
 
 .description__item-image-content img {
-  object-fit: cover;
-  width: 94px;
+  object-fit: scale-down;
+  width: 100.0px;
   height: auto;
   border-radius:51px;
     
